@@ -2,12 +2,12 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-around h-[100px] items-center absolute top-0 left-0 right-0 z-50 text-white'>
-        <h1 className='font-semibold text-[2rem] '>{"<Vishnu/>"}</h1>
-        <ul className='flex gap-[8vw] cursor-pointer'>
-            <a href="/#about"><li className='navlist relative'>About Me</li></a>
-           <a href="/#projects"><li className='navlist relative'>Projects</li></a> 
-            <li className='navlist relative'>Contact</li>
+    <nav className='flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-50 text-white'>
+        <h1 className='font-semibold text-[5vmin] '>{"<Vishnu/>"}</h1>
+        <ul className='flex gap-[15vmin] cursor-none'>
+            <a href="/#about"><li className='navlist text-[2.5vmin] relative  cursor-none'>About Me</li></a>
+           <a href="/#projects"><li className='navlist text-[2.5vmin] relative cursor-none' >Projects</li></a> 
+            <li className='navlist text-[2.5vmin] relative cursor-none'>Contact</li>
         </ul>
     </nav>
   )

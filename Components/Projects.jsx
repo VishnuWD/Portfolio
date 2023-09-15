@@ -3,12 +3,12 @@ import React, { useEffect } from 'react';
 
 const Projects = () => {
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
+    const observerBc = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("bc");
         } else {
-          entry.target.classList.remove("bc");
+          // entry.target.classList.remove("bc");
         }
       });
     });
@@ -18,7 +18,7 @@ const Projects = () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("sc");
         } else {
-          entry.target.classList.remove("sc");
+          // entry.target.classList.remove("sc");
         }
       });
     });
@@ -26,19 +26,21 @@ const Projects = () => {
     const bigCards = document.querySelectorAll(".bigcards");
     const smallCards = document.querySelectorAll(".smallcards");
 
-    bigCards.forEach((el) => observer.observe(el));
+    bigCards.forEach((el) => observerBc.observe(el));
     smallCards.forEach((el) => observerSc.observe(el));
 
     // Cleanup function to disconnect the observers when the component unmounts
     return () => {
-      bigCards.forEach((el) => observer.unobserve(el));
+      bigCards.forEach((el) => observerBc.unobserve(el));
       smallCards.forEach((el) => observerSc.unobserve(el));
     };
   }, []); // Empty dependency array means this effect runs once after initial render
 
   return (
-    <div id='projects' className='h-[100vh] w-[100%] relative overflow-hidden grid place-items-center'>
-      <h2 className='text-[4rem] font-[800]'>Projects</h2>
+    <div id='projects' className='h-[100vh] w-full relative overflow-hidden grid place-items-center'>
+      <h2 className='text-[10vmin] font-[800]'>Projects</h2>
+     
+      <div className='p-[12vmin]'>
       <div className='cardGroup '>
         <div className="smallcards card"></div>
         <div className="bigcards card"></div>
@@ -48,6 +50,7 @@ const Projects = () => {
         <div className="bigcards card"></div>
         <div className="smallcards card"></div>
         <div className="bigcards card"></div>
+      </div>
       </div>
     </div>
   );

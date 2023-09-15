@@ -1,3 +1,4 @@
+"use client"
 import Navbar from '@/Components/Navbar'
 import './globals.css'
 import { Inter, Rubik } from 'next/font/google'
@@ -14,8 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
-        <Navbar />
-        {children}</body>
+      <Navbar />
+        {children}
+        </body>
     </html>
   )
 }

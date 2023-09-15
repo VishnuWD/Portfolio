@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 
 const Hero = () => {
-
   useEffect(() => {
     const side = document.getElementById("left");
 
@@ -20,30 +19,41 @@ const Hero = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <div
         id="left"
-        className="z-[1] bg-teal-500 grid place-items-center h-[100vh] w-[100%] absolute overflow-hidden"
+        className="z-[10] bg-teal-500 grid place-items-center h-[100vh] w-full absolute overflow-hidden"
       >
         <div>
-          <h1 className="text-white  text-8xl font-bold text-[5vw] mx-[15vw] min-w-[70vw]">
-            I am Vishnu Yadav 
-          </h1>           
-          <p className="text-white text-[3vw] mx-[15vw] min-w-[70vw] mt-[5vh] pleft">A <span className="font-semibold font-serif text-[3.5rem] text-gray-700 before:contents-asdklasldk">Front-End</span> Web Developer</p>
+          <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] text-center">
+            I am Vishnu Yadav
+          </h1>
+          <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] pleft text-center">
+            A{" "}
+            <span className="font-semibold font-serif text-[10vmin] text-gray-700 inline-block w-[54vmin] ">
+              Front-End
+            </span>{" "}
+            Web Developer
+          </p>
         </div>
       </div>
 
       <div className=" bg-purple-600 grid place-items-center items-center h-[100vh] w-[100%] absolute overflow-hidden">
         <div>
-          <h1 className="text-white  text-8xl font-bold text-[5vw] mx-[15vw] min-w-[70vw] ">
+          <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] text-center">
             I am Vishnu Yadav
           </h1>
-          <p className="text-white text-[3vw] mx-[15vw] min-w-[70vw] mt-[5vh] ">Aspiring <span className="font-semibold font-serif text-[3.5rem] text-orange-400">Full-Stack</span> Web Developer </p>
+          <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] text-center">
+            Aspiring{" "}
+            <span className="font-semibold font-serif text-[10vmin] text-orange-400 inline-block w-[54vmin]">
+              Full-Stack
+            </span>{" "}
+            Web Developer{" "}
+          </p>
         </div>
       </div>
-      <div className="h-[100vh] w-[100%]">
-      </div>
-    </>
+      <div className="h-[100vh] w-[100%]"></div>
+    </div>
   );
 };
 

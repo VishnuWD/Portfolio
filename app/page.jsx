@@ -1,16 +1,23 @@
-import About from '@/Components/About'
-import Hero from '@/Components/Hero'
-import Projects from '@/Components/Projects'
-import React from 'react'
+"use client";
+
+import About from "@/Components/About";
+import Curser from "@/Components/Curser";
+import Hero from "@/Components/Hero";
+import Projects from "@/Components/Projects";
+
 
 const page = () => {
-  return (
-    <>
-    <Hero/>
-    <About/>
-    <Projects/>
-    </>
-  )
-}
+ 
+ 
 
-export default page
+  return (
+   <>
+   <Curser/>
+      <Hero />
+      <About />
+      <Projects />
+    </>
+  );
+};
+
+export default page;
