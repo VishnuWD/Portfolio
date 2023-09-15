@@ -22,7 +22,7 @@ const Hero = () => {
     <div>
       <div
         id="left"
-        className="z-[10] bg-teal-500 grid place-items-center h-[100vh] w-full absolute overflow-hidden"
+        className="z-[2] bg-teal-500 grid place-items-center h-[100vh] w-full absolute overflow-hidden"
       >
         <div>
           <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] text-center">
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" bg-purple-600 grid place-items-center items-center h-[100vh] w-[100%] absolute overflow-hidden">
+      <div className="z-[1] bg-purple-600 grid place-items-center items-center h-[100vh] w-[100%] absolute overflow-hidden">
         <div>
           <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] text-center">
             I am Vishnu Yadav
