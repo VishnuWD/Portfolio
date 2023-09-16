@@ -1,4 +1,3 @@
-"use client"
 import Navbar from '@/Components/Navbar'
 import './globals.css'
 import { Inter, Rubik } from 'next/font/google'
