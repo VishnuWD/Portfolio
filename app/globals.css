@@ -273,5 +273,5 @@ textarea:not(:placeholder-shown)~label {
 
 
 .para {
-  @apply text-[4vmin]
+  @apply text-[3vmin]
 }
