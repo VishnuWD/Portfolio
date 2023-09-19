@@ -35,6 +35,10 @@ const Hero = () => {
             </span>{" "}
             Web Developer
           </p>
+          <div className=" flex justify-center gap-3 w-[100vw]">
+          <button className="flex gap-[1vmin] font-semibold hover:text-teal-500 hover:bg-gray-700 rounded border-[2px] border-gray-700 text-gray-700 py-[1vmin] px-[3vmin]">linkedin <img className="h-[1.5em]" src="/images/linkedin.png" alt="" /></button>
+          <button className="flex gap-[1vmin] font-semibold hover:text-teal-500 hover:bg-gray-700 rounded border-[2px] border-gray-700 text-gray-700 py-[1vmin] px-[3vmin]">Github <img className="h-[1.5em]" src="/images/github.png" alt="" /></button>
+          </div>
         </div>
       </div>
 
@@ -50,6 +54,10 @@ const Hero = () => {
             </span>{" "}
             Web Developer{" "}
           </p>
+          <div className="flex justify-center gap-3 w-full">
+          <button className="flex gap-[1vmin] font-semibold hover:text-voilet-600 hover:bg-orange-400 rounded border-[2px] border-orange-400 text-orange-400 py-[1vmin] px-[3vmin]">linkedin <img className="h-[1.5em]" src="/images/linkedin.png" alt="" /></button>
+          <button className="flex gap-[1vmin] font-semibold hover:text-voilet-600 hover:bg-orange-400 rounded border-[2px] border-orange-400 text-orange-400 py-[1vmin] px-[3vmin]">Github <img className="h-[1.5em]" src="/images/github.png" alt="" /></button>
+          </div>
         </div>
       </div>
       <div className="h-[100vh] w-[100%]"></div>

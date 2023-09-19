@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-background-color:  #1f2937;
-color: #fff;
- cursor: none;
+
+body {
+  background-color: #1f2937;
+  color: #fff;
+  cursor: none;
 }
+
 /* #fb923c for orange color */
 /* #total{
   position: absolute;
@@ -17,7 +19,7 @@ color: #fff;
   width:100px;
 }  */
 
-#first{
+#first {
   height: 10px;
   width: 10px;
   background-color: #fb923c;
@@ -25,9 +27,10 @@ color: #fff;
   /* position: fixed; */
   position: fixed;
   z-index: 2;
-  
+
 }
-#second{
+
+#second {
   /* height: 200px;
   width: 200px; */
   background: linear-gradient(300deg, #14b8a6, #9333ea);
@@ -35,75 +38,87 @@ color: #fff;
   background-size: 180% 180%;
   animation: rotate-center 8s linear infinite both;
   border-radius: 50%;
-  position: fixed; 
+  position: fixed;
   filter: blur(30px);
   /* transition: border 0.0s linear; */
   z-index: -99;
-  transition: all 0.3s ;
- 
+  transition: all 0.3s;
+
 }
+
 @keyframes rotate-center {
   0% {
     background-position: 0% 50%;
     transform: rotate(0);
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
     transform: rotate(360deg);
 
   }
 }
+
 .pleft::before {
-    content: "--___"; /* Content goes here */
-    visibility: hidden;
-  }
-  
-  .equal-width {
-    display: inline-block;
-    width: 54vmin;
-  }
+  content: "--___";
+  /* Content goes here */
+  visibility: hidden;
+}
 
-  .navlist::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0%;
-    background-color: white;
-    transition: all ease 0.3s;
-  }
-  .navlist:hover:after{
- width: 100%;
-  }
-  ::-webkit-scrollbar{
-    width: 10px;
-  }
+.equal-width {
+  display: inline-block;
+  width: 54vmin;
+}
 
-  ::-webkit-scrollbar-thumb{
-    background-color: #1f2937;
-    border-radius: 1vw;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background-color:#fb923c;
+.navlist::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: all ease 0.3s;
+}
+
+.navlist:hover:after {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1f2937;
+  border-radius: 1vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #fb923c;
   border: 3px solid #1f2937;
   cursor: none;
-  }
-  ::-webkit-scrollbar-track {
-    background-color:#1f2937 ;
-  }
-  ::-webkit-scrollbar-track:hover {
-    background-color: #1f2937;
-  }
-  ::-webkit-scrollbar-track:hover ~ ::-webkit-scrollbar-thumb{
-    background-color: #fb923c;
-  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f2937;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #1f2937;
+}
+
+::-webkit-scrollbar-track:hover~ ::-webkit-scrollbar-thumb {
+  background-color: #fb923c;
+}
+
 /* About start........................... */
 
-.gradient{
+.gradient {
   width: 70%;
   height: 20%;
   border-radius: 50%;
@@ -114,131 +129,149 @@ color: #fff;
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
   position: absolute;
-filter: blur(100px);
-z-index: -99;
- }
+  filter: blur(100px);
+  z-index: -99;
+}
 
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* About send............................... */
 
-  .cardGroup, .card{
-aspect-ratio: 16 / 9;
-
-
-  }
-  .cardGroup, .bigcards{
-    width: 45vmin;
-  
-
-  }
-h2{
-  text-shadow: 0px 0px 9px rgba(0,0,0,0.6);
+.cardGroup,
+.card {
+  aspect-ratio: 16 / 9;
 }
-.card{
+
+.cardGroup,
+.bigcards {
+  width: 45vmin;
+
+
+}
+
+h2 {
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width:768px){
+
+}
+
+.card {
   background-color: blueviolet;
   position: absolute;
-transition: transform 800ms cubic-bezier(.05, .43, .25, .95) 0.3s;
-box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.82);
+  transition: transform 800ms cubic-bezier(.05, .43, .25, .95) 0.3s;
+  box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.82);
 
 }
 
-  .bigcards {
-    width: 45vmin;
-    border-radius: 3vmin;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    background-image: linear-gradient(to right, #14b8a6, #9333ea);
-    background-clip: content-box;
-  }
+.bigcards {
+  width: 45vmin;
+  border-radius: 3vmin;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right, #14b8a6, #9333ea);
+  background-clip: content-box;
+}
 
-  .smallcards{
-    width: 18vmin;
-    border-radius: 2vmin;
-    /* border: 2px solid transparent; */
-    background-image: linear-gradient(to right, #14b8a6, #9333ea);
-    background-clip: content-box;
-    left: 50%;
-    top: 57.5%;
-    transform: translate(-50%, -50%);
-  }
- 
-    
-  .bigcards:nth-child(2) {
-    background-color: red;
-    transform: translateX(-10%) rotate(-1deg);
-   
-  }
-  
-  .bigcards:nth-child(4) {
-    background-color: black;
-    transform: rotate(2deg);
-  }
-  
-  .bigcards:nth-child(6) {
-    background-color: green;
-    transform: translateX(-6%) rotate(-3deg);
-  }
-  
-  .bigcards:nth-child(8) {
-    background-color: blue;
-    transform: translate(10%, 3%) rotate(5deg);
-  }
-
-  /* hover of big cards */
-
-  .bc:nth-child(2) {
-    transform: translate(-100%, 16%) rotate(-24deg);
-   
-  }
-  
-  .bc:nth-child(4) {
-    transform: translate(-35%, 8%) rotate(-8deg);
-  }
-  
-  .bc:nth-child(6) {
-    transform: translate(35%, 8%) rotate(8deg);
-  }
-  
-  .bc:nth-child(8) {
-    transform: translate(100%, 16%) rotate(24deg);
-  }
+.smallcards {
+  width: 18vmin;
+  border-radius: 2vmin;
+  /* border: 2px solid transparent; */
+  background-image: linear-gradient(to right, #14b8a6, #9333ea);
+  background-clip: content-box;
+  left: 50%;
+  top: 57.5%;
+  transform: translate(-50%, -50%);
+}
 
 
-  /* small cards hover 👇 */
-  .sc:nth-child(1) {
-    transform: translate(200%, -200%) rotate(-15deg);
-   
-  }
-  
-  .sc:nth-child(3) {
-    transform: translate(160%, 170%) rotate(15deg);
-  }
-  
-  .sc:nth-child(5) {
-    transform: translate(-200%, -200%) rotate(15deg);
-  }
-  
-  .sc:nth-child(7) {
-    transform: translate(-280%, 180%) rotate(-15deg);
-  }
- 
+.bigcards:nth-child(2) {
+  background-color: red;
+  transform: translateX(-10%) rotate(-1deg);
+
+}
+
+.bigcards:nth-child(4) {
+  background-color: black;
+  transform: rotate(2deg);
+}
+
+.bigcards:nth-child(6) {
+  background-color: green;
+  transform: translateX(-6%) rotate(-3deg);
+}
+
+.bigcards:nth-child(8) {
+  background-color: blue;
+  transform: translate(10%, 3%) rotate(5deg);
+}
+
+/* hover of big cards */
+
+.bc:nth-child(2) {
+  transform: translate(-100%, 16%) rotate(-24deg);
+
+}
+
+.bc:nth-child(4) {
+  transform: translate(-35%, 8%) rotate(-8deg);
+}
+
+.bc:nth-child(6) {
+  transform: translate(35%, 8%) rotate(8deg);
+}
+
+.bc:nth-child(8) {
+  transform: translate(100%, 16%) rotate(24deg);
+}
+
+
+/* small cards hover 👇 */
+.sc:nth-child(1) {
+  transform: translate(200%, -200%) rotate(-15deg);
+
+}
+
+.sc:nth-child(3) {
+  transform: translate(160%, 170%) rotate(15deg);
+}
+
+.sc:nth-child(5) {
+  transform: translate(-200%, -200%) rotate(15deg);
+}
+
+.sc:nth-child(7) {
+  transform: translate(-280%, 180%) rotate(-15deg);
+}
+
 /* Contact me starts here */
 
-input:focus ~ label, input:not(:placeholder-shown) ~label, textarea:focus ~ label, textarea:not(:placeholder-shown) ~label{
+input:focus~label,
+input:not(:placeholder-shown)~label,
+textarea:focus~label,
+textarea:not(:placeholder-shown)~label {
   top: 0;
   left: 5%;
   background-color: #1f2937;
   font-size: small;
   color: #fb923c;
+}
+
+
+.para {
+  @apply text-[4vmin]
 }
