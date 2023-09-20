@@ -26,13 +26,13 @@ const Curser = () => {
       // second.style.borderRadius = `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}/ ${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`;
       // second.style.height = "200px";
       // second.style.width = "200px";
-      second.style.transition = "all 0.5s linear";
+      // second.style.transition = "all 0.5s linear";
         // second.style.transition = "width 1s ease-in-out";
 
       //   second.style.transition = "height 1s ease-in-out";
     };
 
-    const intervalId = setInterval(loopFunction, 5000);
+    // const intervalId = setInterval(loopFunction, 5000);
 
     // Attach the event listener when the component mounts
     document.addEventListener("mousemove", handleMouseMove);
