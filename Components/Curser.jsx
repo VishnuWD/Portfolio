@@ -23,7 +23,7 @@ const Curser = () => {
       //   const width = Math.floor(Math.random() * 100 + 100) + "px";
 
       // Set the borderRadius property with the correct values
-      second.style.borderRadius = `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}/ ${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`;
+      // second.style.borderRadius = `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}/ ${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`;
       second.style.height = "200px";
       second.style.width = "200px";
       second.style.transition = "all 0.5s linear";
