@@ -6,7 +6,7 @@ const Curser = () => {
       const first = document.getElementById("first");
       const second = document.getElementById("second");
 
-      if (first && second) {
+      if (first ) {
         first.style.left = event.x - 5 + "px";
         first.style.top = event.y - 5 + "px";
         second.style.left = event.x - 100 + "px";
@@ -14,18 +14,18 @@ const Curser = () => {
       }
     };
 
-    const loopFunction = () => {
-      const topLeft = Math.floor(Math.random() * 300 + 150) + "px";
-      const topRight = Math.floor(Math.random() * 300 + 150) + "px";
-      const bottomRight = Math.floor(Math.random() * 300 + 150) + "px";
-      const bottomLeft = Math.floor(Math.random() * 300 + 150) + "px";
+    // const loopFunction = () => {
+    //   const topLeft = Math.floor(Math.random() * 300 + 150) + "px";
+    //   const topRight = Math.floor(Math.random() * 300 + 150) + "px";
+    //   const bottomRight = Math.floor(Math.random() * 300 + 150) + "px";
+    //   const bottomLeft = Math.floor(Math.random() * 300 + 150) + "px";
       //   const height = Math.floor(Math.random() * 100 + 100) + "px";
       //   const width = Math.floor(Math.random() * 100 + 100) + "px";
 
       // Set the borderRadius property with the correct values
       // second.style.borderRadius = `${topLeft} ${topRight} ${bottomRight} ${bottomLeft}/ ${topLeft} ${topRight} ${bottomRight} ${bottomLeft}`;
-      second.style.height = "200px";
-      second.style.width = "200px";
+      // second.style.height = "200px";
+      // second.style.width = "200px";
       second.style.transition = "all 0.5s linear";
         // second.style.transition = "width 1s ease-in-out";
 
@@ -45,7 +45,7 @@ const Curser = () => {
   return (
     <div id="total">
       <div id="first"></div>
-      <div id="second"></div>
+{/*       <div id="second"></div> */}
     </div>
   );
 };
