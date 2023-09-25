@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
+import Image from "next/image";
+import { Lucy } from "@/Lib/Static";
 
 
 const About = () => {
-
   return (
     <div
       id="about"
@@ -16,9 +17,10 @@ const About = () => {
         <div className="lg:text-right text-center w-[100%] flex flex-col justify-center ">
           <h2 className="text-[7vmin]">About Me</h2>
           <p className="para">
-          As a Frontend Developer, I am currently expanding my skillset by learning
-           backend development, with the goal of becoming a Full Stack Developer. 
-           In addition to coding, I enjoy staying active and often visit the gym.
+            As a Frontend Developer, I am currently expanding my skillset by
+            learning backend development, with the goal of becoming a Full Stack
+            Developer. In addition to coding, I enjoy staying active and often
+            visit the gym.
           </p>
         </div>
         <img
@@ -28,11 +30,14 @@ const About = () => {
         />
         <div className="lg:text-left text-center w-[100%] flex flex-col justify-center">
           <h2 className="text-[7vmin]">Skills</h2>
-          <p className="para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-            pariatur aperiam corrupti magnam, officia, ab nobis perspiciatis
-            expedita a iure, sequi vel atque voluptates placeat.
-          </p>
+          <div className="flex flex-wrap gap-[4vmin]">
+          {Lucy.map((data, i) =>{
+          return <div className="flex justify-center items-center flex-col">
+              <img key={i} src={data.src} alt={data.alt} className={data.className}/>
+              <p>{data.name}</p>
+              </div>}
+          )}
+          </div>
         </div>
       </div>
     </div>

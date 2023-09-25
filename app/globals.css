@@ -26,7 +26,7 @@ body {
   border-radius: 50%;
   /* position: fixed; */
   position: fixed;
-  z-index: 2;
+  z-index:99;
 
 }
 
@@ -39,7 +39,7 @@ body {
   animation: rotate-center 8s linear infinite both;
   border-radius: 50%;
   position: fixed;
-  filter: blur(30px);
+  filter: blur(6vmin);
   /* transition: border 0.0s linear; */
   z-index: -99;
   transition: all 0.3s;
@@ -129,7 +129,7 @@ body {
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
   position: absolute;
-  filter: blur(100px);
+  filter: blur(10vmin);
   z-index: -99;
 }
 
@@ -274,4 +274,28 @@ textarea:not(:placeholder-shown)~label {
 
 .para {
   @apply text-[3vmin]
+}
+.herobutton{
+  @apply flex gap-[1vmin] font-semibold rounded border-[2px]  py-[1vmin] px-[3vmin] cursor-none
+}
+.heroSpan{
+  @apply font-semibold font-serif text-[10vmin]  inline-block w-[54vmin]
+}
+
+
+
+.aboutIcons{
+  @apply w-[8vmin] 
+}
+.react{
+  animation: rotate 5s linear infinite ;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
 }

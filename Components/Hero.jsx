@@ -7,7 +7,7 @@ const Hero = () => {
 
     const handleOnMove = (e) => {
       const newPosition = (e.clientX / window.innerWidth) * 100;
-      side.style.width = `${newPosition}%`;
+      side.style.width = `${newPosition + 1.3}%`;
     };
 
     document.onmousemove = (e) => {
@@ -30,14 +30,14 @@ const Hero = () => {
           </h1>
           <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] pleft text-center">
             A{" "}
-            <span className="font-semibold font-serif text-[10vmin] text-gray-700 inline-block w-[54vmin] ">
+            <span className="heroSpan text-gray-700 ">
               Front-End
             </span>{" "}
             Web Developer
           </p>
-          <div className=" flex justify-center gap-3 w-[100vw]">
-          <button className="flex gap-[1vmin] font-semibold hover:text-teal-500 hover:bg-gray-700 rounded border-[2px] border-gray-700 text-gray-700 py-[1vmin] px-[3vmin]">linkedin <img className="h-[1.5em]" src="/images/linkedin.png" alt="" /></button>
-          <button className="flex gap-[1vmin] font-semibold hover:text-teal-500 hover:bg-gray-700 rounded border-[2px] border-gray-700 text-gray-700 py-[1vmin] px-[3vmin]">Github <img className="h-[1.5em]" src="/images/github.png" alt="" /></button>
+          <div className="flex justify-center gap-3 w-[100vw]">
+          <button className="herobutton hover:text-teal-500 transition-all hover:bg-gray-700 border-gray-700 text-gray-700 p">linkedin <img className="h-[1.5em]" src="/images/linkedin.png" alt="" /></button>
+          <button className="herobutton hover:text-teal-500 hover:bg-gray-700 border-gray-700 text-gray-700">Github <img className="h-[1.5em]" src="/images/github.png" alt="" /></button>
           </div>
         </div>
       </div>
@@ -49,14 +49,14 @@ const Hero = () => {
           </h1>
           <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] text-center">
             Aspiring{" "}
-            <span className="font-semibold font-serif text-[10vmin] text-orange-400 inline-block w-[54vmin]">
+            <span className="heroSpan text-orange-400">
               Full-Stack
             </span>{" "}
             Web Developer{" "}
           </p>
           <div className="flex justify-center gap-3 w-full">
-          <button className="flex gap-[1vmin] font-semibold hover:text-voilet-600 hover:bg-orange-400 rounded border-[2px] border-orange-400 text-orange-400 py-[1vmin] px-[3vmin]">linkedin <img className="h-[1.5em]" src="/images/linkedin.png" alt="" /></button>
-          <button className="flex gap-[1vmin] font-semibold hover:text-voilet-600 hover:bg-orange-400 rounded border-[2px] border-orange-400 text-orange-400 py-[1vmin] px-[3vmin]">Github <img className="h-[1.5em]" src="/images/github.png" alt="" /></button>
+          <button className="herobutton hover:text-voilet-600 hover:bg-orange-400 border-orange-400 text-orange-400">linkedin <img className="h-[1.5em]" src="/images/linkedin.png" alt="" /></button>
+          <button className="herobutton hover:text-voilet-600 hover:bg-orange-400 border-orange-400 text-orange-400 ">Github <img className="h-[1.5em]" src="/images/github.png" alt="" /></button>
           </div>
         </div>
       </div>

@@ -1,0 +1,49 @@
+export const Lucy = [{
+    src:`/images/aboutIcons/html.png`,
+    alt:"whatever",
+    className:"aboutIcons",
+    name:"HTML"
+},
+{
+    src:"/images/aboutIcons/css.png",
+    alt:"css",
+    className:"aboutIcons",
+    name:"CSS"
+},
+{
+    src:"/images/aboutIcons/js.png",
+    alt:"whatever",
+    className:"aboutIcons",
+    name:"JavaScript"
+},
+{
+    src:"/images/aboutIcons/react.png",
+    alt:"whatever",
+    className:"react aboutIcons",
+    name:"React.js"
+},
+{
+    src:"/images/aboutIcons/bootstrap.png",
+    alt:"whatever",
+    className:"aboutIcons",
+    name:"BootStrap"
+},
+{
+    src:"/images/aboutIcons/tailwind.png",
+    alt:"whatever",
+    className:"aboutIcons",
+    name:"Tailwind CSS"
+},
+{
+    src:"/images/aboutIcons/git.png",
+    alt:"whatever",
+    className:"aboutIcons",
+    name:"Git"
+},
+{
+    src:"/images/aboutIcons/github.png",
+    alt:"whatever",
+    className:"aboutIcons rounded-full scale-90",
+    name:"GitHub"
+}
+]
