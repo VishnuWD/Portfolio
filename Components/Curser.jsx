@@ -6,12 +6,18 @@ const Curser = () => {
       const first = document.getElementById("first");
       const second = document.getElementById("second");
 
+<<<<<<< HEAD
       if (first && second) {
         first.style.left = event.x  + "px";
         first.style.top = event.y  + "px";
+=======
+      
+        first.style.left = event.x - 5 + "px";
+        first.style.top = event.y - 5 + "px";
+>>>>>>> efaf492f3d8e199f8c6647518c644f9ee72f79f6
         second.style.left = event.x - 100 + "px";
         second.style.top = event.y - 100 + "px";
-      }
+      
     };
 
     const loopFunction = () => {
