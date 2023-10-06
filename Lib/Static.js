@@ -1,6 +1,6 @@
 export const Lucy = [{
     src:`/images/aboutIcons/html.png`,
-    alt:"whatever",
+    alt:"html",
     className:"aboutIcons",
     name:"HTML"
 },
@@ -12,38 +12,72 @@ export const Lucy = [{
 },
 {
     src:"/images/aboutIcons/js.png",
-    alt:"whatever",
+    alt:"javascript",
     className:"aboutIcons",
     name:"JavaScript"
 },
 {
     src:"/images/aboutIcons/react.png",
-    alt:"whatever",
+    alt:"react",
     className:"react aboutIcons",
     name:"React.js"
 },
 {
     src:"/images/aboutIcons/bootstrap.png",
-    alt:"whatever",
+    alt:"bootstrap",
     className:"aboutIcons",
     name:"BootStrap"
 },
 {
     src:"/images/aboutIcons/tailwind.png",
-    alt:"whatever",
+    alt:"tailwind",
     className:"aboutIcons",
     name:"Tailwind CSS"
 },
 {
     src:"/images/aboutIcons/git.png",
-    alt:"whatever",
+    alt:"git",
     className:"aboutIcons",
     name:"Git"
 },
 {
     src:"/images/aboutIcons/github.png",
-    alt:"whatever",
+    alt:"github",
     className:"aboutIcons rounded-full scale-90",
     name:"GitHub"
 }
+]
+export const projects = [
+    {
+        src:"images/projectImages/1.jpg",
+        className:"smallcards card"
+    },
+    {
+        src:"images/projectImages/1.jpg",
+        className:"bigcards card"
+    },
+    {
+        src:"images/projectImages/2.jpg",
+        className:"smallcards card"
+    },
+    {
+        src:"images/projectImages/2.jpg",
+        className:"bigcards card"
+    },
+    {
+        src:"images/projectImages/3.jpg",
+        className:"smallcards card"
+    },
+    {
+        src:"images/projectImages/3.jpg",
+        className:"bigcards card"
+    },
+    {
+        src:"images/projectImages/4.jpg",
+        className:"smallcards card"
+    },
+    {
+        src:"images/projectImages/4.jpg",
+        className:"bigcards card"
+    },
 ]

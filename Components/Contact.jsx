@@ -31,9 +31,9 @@ const Contact = () => {
             logo="mail"
           />
         </div>
-        <img className="min-h-[50vmin] min-w-[50vmin] lg:w-[40vmin]  z-[0] py-[5vmin]" src="images\envelope greeting.png" alt="Mail Image" />
-        <form className="z-[90] w-full flex flex-col justify-evenly gap-[1.5vmin]" >
-          <h2 className="text-[7vmin] font-[600] z-[0]">Say Hi</h2>
+        <img className="min-h-[50vmin] min-w-[50vmin] lg:w-[40vmin] py-[5vmin]" src="images\envelope greeting.png" alt="Mail Image" />
+        <form className=" w-full flex flex-col justify-evenly gap-[1.5vmin]" >
+          <h2 className="text-[7vmin] font-[600] ">Say Hi</h2>
             <ContactForm name="Name" id="name" type="text"/>
             <ContactForm name="Email" id="email" type="email"/>
             <div className="relative">

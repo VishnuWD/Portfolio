@@ -2,21 +2,21 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white">
+    <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden">
       <h1 className="font-semibold text-[8vmin] ">{"< Vishnu />"}</h1>
       <ul className="lg:flex gap-[15vmin] cursor-none">
         <a href="/#about">
-          <li className="navlist text-[2.5vmin] relative  cursor-none  hidden lg:block">
+          <li className="navlist">
             About Me
           </li>
         </a>
         <a href="/#projects">
-          <li className="navlist text-[2.5vmin] relative cursor-none  hidden lg:block">
+          <li className="navlist">
             Projects
           </li>
         </a>
         <a href="/#contact">
-          <li className="navlist text-[2.5vmin] relative cursor-none  hidden lg:block">
+          <li className="navlist">
             Contact
           </li>
         </a>

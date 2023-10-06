@@ -7,8 +7,8 @@ const Cursor = () => {
       const second = document.getElementById("second");
 
       if (first && second) {
-        first.style.left = event.x + "px";
-        first.style.top = event.y + "px";
+        first.style.left = event.x - 7.5 + "px";
+        first.style.top = event.y - 7.5 + "px";
 
         second.style.left = event.x - 100 + "px";
         second.style.top = event.y - 100 + "px";

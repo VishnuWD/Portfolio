@@ -1,4 +1,5 @@
 "use client"
+import { projects } from '@/Lib/Static';
 import React, { useEffect } from 'react';
 
 const Projects = () => {
@@ -41,15 +42,11 @@ const Projects = () => {
       <h2 className='text-[10vmin] font-[800]'>Projects</h2>
      
       <div className='p-[12vmin]'>
+
       <div className='cardGroup '>
-        <div className="smallcards card"></div>
-        <div className="bigcards card"></div>
-        <div className="smallcards card"></div>
-        <div className="bigcards card"></div>
-        <div className="smallcards card"></div>
-        <div className="bigcards card"></div>
-        <div className="smallcards card"></div>
-        <div className="bigcards card"></div>
+        {projects.map((data, i)=>{
+          return <img key={i} className={data.className+ ""} src={data.src} alt="" />
+        })}
       </div>
       </div>
     </div>

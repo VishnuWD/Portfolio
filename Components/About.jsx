@@ -32,8 +32,8 @@ const About = () => {
           <h2 className="text-[7vmin]">Skills</h2>
           <div className="flex flex-wrap gap-[4vmin]">
           {Lucy.map((data, i) =>{
-          return <div className="flex justify-center items-center flex-col">
-              <img key={i} src={data.src} alt={data.alt} className={data.className}/>
+          return <div key={i} className="flex justify-center items-center flex-col">
+              <Image  src={data.src} alt={data.alt} width={50} height={50} className={data.className}/>
               <p>{data.name}</p>
               </div>}
           )}
