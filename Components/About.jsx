@@ -8,10 +8,10 @@ const About = () => {
   return (
     <div
       id="about"
-      className="h-[100vh] w-full relative overflow-hidden flex flex-col justify-center"
+      className=" md:h-[100vh] w-full relative overflow-hidden flex flex-col justify-center"
     >
-      <h2 className="text-[10vmin] font-[800] text-center ">About Me</h2>
-      <div className="gradient"></div>
+      <h2 className="text-[10vmin] font-[800] text-center p-[8vmin]">About Me</h2>
+      <div className="gradient rotate-90 md:rotate-0"></div>
 
       <div className="Wrapper m-[10vmin] mt-[0px] flex flex-col lg:flex-row justify-center">
         <div className="lg:text-right text-center w-[100%] flex flex-col justify-center ">
@@ -24,13 +24,13 @@ const About = () => {
           </p>
         </div>
         <img
-          className="min-h-[50vmin] min-w-[50vmin]"
+          className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin]"
           src="\images\smile.png"
           alt="Vishnu Picture"
         />
         <div className="lg:text-left text-center w-[100%] flex flex-col justify-center">
           <h2 className="text-[7vmin]">Skills</h2>
-          <div className="flex flex-wrap gap-[4vmin]">
+          <div className="flex justify-center flex-wrap gap-[4vmin]">
           {Lucy.map((data, i) =>{
           return <div key={i} className="flex justify-center items-center flex-col">
               <Image  src={data.src} alt={data.alt} width={50} height={50} className={data.className}/>

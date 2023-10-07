@@ -1,9 +1,10 @@
 import Navbar from "@/Components/Navbar";
 import "./globals.css";
-import { Inter, Rubik } from "next/font/google";
+import { Inter, Rubik, Montserrat } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubik = Rubik({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio",
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={montserrat.className}>
         <Navbar />
         {children}
       </body>

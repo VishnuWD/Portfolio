@@ -32,13 +32,13 @@ const Cursor = () => {
     document.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      clearInterval(intervalId); 
+      clearInterval(intervalId);
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
 
   return (
-    <div id="total">
+    <div className="hidden md:block" id="total">
       <div id="first"></div>
       <div id="second"></div>
     </div>
@@ -46,4 +46,3 @@ const Cursor = () => {
 };
 
 export default Cursor;
-

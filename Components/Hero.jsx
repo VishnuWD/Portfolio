@@ -7,7 +7,7 @@ const Hero = () => {
 
     const handleOnMove = (e) => {
       const newPosition = (e.clientX / window.innerWidth) * 100;
-      side.style.width = `${newPosition + 1}%`;
+      side.style.width = `${newPosition}%`;
     };
 
     document.onmousemove = (e) => {
@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] text-center">
             I am Vishnu Yadav
           </h1>
-          <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] pleft text-center">
+          <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] font-[500] mt-[5vh] pleft text-center">
             A <span className="heroSpan text-gray-700 text-left">Front-End</span> Web
             Developer
           </p>
@@ -41,10 +41,10 @@ const Hero = () => {
           <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] text-center">
             I am Vishnu Yadav
           </h1>
-          <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] text-center">
+          <p className="text-white text-[8vmin] mx-[5vw] min-w-[90vw] mt-[5vh] font-[500] text-center">
             Aspiring{" "}
             <span className="heroSpan text-orange-400 text-left">Full-Stack</span> Web
-            Developer{" "}
+            Developer {" "}
           </p>
         
         </div>

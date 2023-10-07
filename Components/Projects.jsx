@@ -38,8 +38,9 @@ const Projects = () => {
   }, []); // Empty dependency array means this effect runs once after initial render
 
   return (
-    <div id='projects' className='h-[100vh] w-full relative overflow-hidden grid place-items-center'>
-      <h2 className='text-[10vmin] font-[800]'>Projects</h2>
+
+    <div id='projects' className='h-[130vh] md:h-[100vh] w-full relative overflow-hidden flex flex-col items-center '>
+      <h2 className='text-[10vmin] font-[800] p-[8vmin]'>Projects</h2>
      
       <div className='p-[12vmin]'>
 
@@ -50,6 +51,7 @@ const Projects = () => {
       </div>
       </div>
     </div>
+    
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react";
 import ContactLinks from "./ContactLinks";
 import ContactForm from "./ContactForm";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -31,8 +32,8 @@ const Contact = () => {
             logo="mail"
           />
         </div>
-        <img className="min-h-[50vmin] min-w-[50vmin] lg:w-[40vmin] py-[5vmin]" src="images\envelope greeting.png" alt="Mail Image" />
-        <form className=" w-full flex flex-col justify-evenly gap-[1.5vmin]" >
+        <Image className="min-h-[50vmin] min-w-[50vmin] lg:w-[40vmin] py-[5vmin]" src="/images\greeting.png" alt="Mail Image" height={500} width={500} />
+        <form className=" w-full flex flex-col justify-evenly gap-[3.5vmin]" >
           <h2 className="text-[7vmin] font-[600] ">Say Hi</h2>
             <ContactForm name="Name" id="name" type="text"/>
             <ContactForm name="Email" id="email" type="email"/>

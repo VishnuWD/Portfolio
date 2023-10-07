@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden">
-      <h1 className="font-semibold text-[8vmin] ">{"< Vishnu />"}</h1>
+      <h1 className="font-bold text-[7vmin] md:text-[7vmin]">{"< Vishnu />"}</h1>
       <ul className="lg:flex gap-[15vmin] cursor-none">
         <a href="/#about">
           <li className="navlist">

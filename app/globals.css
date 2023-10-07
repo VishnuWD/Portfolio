@@ -68,7 +68,7 @@ body {
 }
 
 .pleft::before {
-  content: "--___";
+  content: "--____..-";
   /* Content goes here */
   visibility: hidden;
 }
@@ -206,7 +206,7 @@ h2 {
 
 }
 .cardGroup:hover .card{
-  filter: blur(1vmin);
+  filter: blur(0.5vmin);
   opacity: 50%;
   transition: all 0.3s;
 }
@@ -316,6 +316,40 @@ textarea:not(:placeholder-shown)~label {
   100%{
     transform: rotate(360deg);
   }
-  
 }
 
+@media(max-width: 640px){
+  .gradient {
+    width: 20%;
+    height: 50%;
+  }
+
+  .pleft::before {
+    content: "--____..-";
+    /* Content goes here */
+    visibility: hidden;
+  }
+  .cardGroup,
+.bigcards {
+  width: 70vmin;
+}
+  .smallcards{
+    display: none;
+  }
+  .bc:nth-child(2) {
+    transform: translate(0, -200%) rotate(-14deg);
+  
+  }
+  
+  .bc:nth-child(4) {
+    transform: translate(0, -50%) rotate(-8deg);
+  }
+  
+  .bc:nth-child(6) {
+    transform: translate(0, 100%) rotate(8deg);
+  }
+  
+  .bc:nth-child(8) {
+    transform: translate(0, 250%) rotate(24deg);
+  }
+}
