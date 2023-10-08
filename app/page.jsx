@@ -14,7 +14,6 @@ const page = () => {
       <About />
       <Projects />
       <Contact />
-    <Alert/>
     <p className='fixed bottom-0 h-[30px] bg-red-700 z-[100] w-full text-center'>The website is currently in development.</p>
     </>
   );
