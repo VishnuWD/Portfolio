@@ -5,7 +5,6 @@ import Contact from "@/Components/Contact";
 import Curser from "@/Components/Curser";
 import Hero from "@/Components/Hero";
 import Projects from "@/Components/Projects";
-import Alert from "@/Components/alert";
 
 const page = () => {
   return (
