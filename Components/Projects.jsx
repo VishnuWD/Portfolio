@@ -39,15 +39,28 @@ const Projects = () => {
 
   return (
 
-    <div id='projects' className='h-[130vh] md:h-[100vh] w-full relative overflow-hidden flex flex-col items-center '>
-      <h2 className='text-[10vmin] font-[800] p-[8vmin]'>Projects</h2>
+    <div id='projects' className=' w-full relative overflow-hidden flex flex-col items-center '>
+      <h2 className='text-[10vmin] font-[800] '>Projects</h2>
      
-      <div className='p-[12vmin]'>
+      <div className='p-[10vmin]'>
 
-      <div className='cardGroup '>
+      <div className='cardGroup'>
         {projects.map((data, i)=>{
-          return <img key={i} className={data.className+ ""} src={data.src} alt="" />
+          return  <div key={i} className="card">
+          <img src={data.src} alt="" />
+          <div className="card__content">
+            <p className="card__title">{data.title}</p>
+            <p className="card__description">
+              {data.desc}
+            </p>
+            <button className="card__button">Live Demo</button>
+            <button className="card__button secondary">Code</button>
+          </div>
+        </div>
+          
         })}
+      
+
       </div>
       </div>
     </div>

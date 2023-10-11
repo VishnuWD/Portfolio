@@ -48,36 +48,35 @@ export const Lucy = [{
 }
 ]
 export const projects = [
+    
     {
         src:"images/projectImages/1.jpg",
-        className:"smallcards card"
+        className:"bigcards card",
+        title:"Personal Portfolio",
+        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
     },
-    {
-        src:"images/projectImages/1.jpg",
-        className:"bigcards card"
-    },
-    {
-        src:"images/projectImages/2.jpg",
-        className:"smallcards card"
-    },
+  
     {
         src:"images/projectImages/2.jpg",
-        className:"bigcards card"
+        className:"bigcards card",
+        title:"Superheo Game",
+        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
+    
     },
+  
     {
         src:"images/projectImages/3.jpg",
-        className:"smallcards card"
+        className:"bigcards card",
+        title:"Digital Identity",
+        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
+    
     },
-    {
-        src:"images/projectImages/3.jpg",
-        className:"bigcards card"
-    },
-    {
-        src:"images/projectImages/4.jpg",
-        className:"smallcards card"
-    },
+  
     {
         src:"images/projectImages/4.jpg",
-        className:"bigcards card"
+        className:"bigcards card",
+        title:"Personal Portfolio",
+        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
+    
     },
 ]
