@@ -47,36 +47,59 @@ export const Lucy = [{
     name:"GitHub"
 }
 ]
+
 export const projects = [
     
     {
-        src:"images/projectImages/1.jpg",
+        src:"images/projectImages/portfolio.png",
         className:"bigcards card",
         title:"Personal Portfolio",
-        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
+        desc1:"Utilized Next.js, Tailwind CSS, and CSS to design and build the site.",
+        desc2:"Deployed the website on GitHub Pages and Hosted in Vercel.",
+        btn1:"Live Demo",
+        btn2:"Code",
+        url:"https://portfolio-xi-two-16.vercel.app",
+        gitUrl:"https://github.com/VishnuWD/Portfolio",
+        target:"_blank",
+        target2:"_blank"
     },
   
     {
-        src:"images/projectImages/2.jpg",
+        src:"images/projectImages/superherogame.png",
         className:"bigcards card",
         title:"Superheo Game",
-        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
-    
+        desc1:"Developed a Superhero Game using Vanilla JavaScript, CSS and HTML.",
+        desc2:"Added 'Play With Bot' for enriched multiplayer experience, eliminating player isolation in the game.",
+        btn1:"Live Demo",
+        btn2:"Code",
+        url:"https://vishnuwd.github.io/SuperHeroGame/",
+        gitUrl:"https://github.com/VishnuWD/SuperHeroGame",
+        target:"_blank",
+        target2:"_blank"
     },
   
     {
-        src:"images/projectImages/3.jpg",
+        src:"images/projectImages/d-i.png",
         className:"bigcards card",
         title:"Digital Identity",
-        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
-    
+        desc1:"Replicated the appearance and functionality of a commonly used website for realistic user experience.",
+        desc2:"Designed and implemented a website using React.js.",
+        btn1:"Live Demo",
+        btn2:"Code",
+        url:"https://digital-identity-h64zxo76s-vishnuwd.vercel.app",
+        gitUrl:"https://github.com/VishnuWD/Digital-Identity",
+        target:"_blank",
+        target2:"_blank"
     },
   
     {
-        src:"images/projectImages/4.jpg",
+        src:"images/projectImages/brokeman.png",
         className:"bigcards card",
-        title:"Personal Portfolio",
-        desc:"lorem adas dsadasdas ahosifof  oafho ahfoa ohf fusdfg a gaifuh igfisaudghf faisuf sdfg iaf iasdufgh ifgs idfsdfgh ia"
-    
+        title:"More Projects",
+        btn1:"Explore",
+        btn2:"GitHub",
+        url:"",
+        gitUrl:"https://github.com/VishnuWD?tab=repositories",
+        target2:"_blank"
     },
 ]
