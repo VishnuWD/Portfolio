@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 const Projects = () => {
   useEffect(() => {
-    const observerBc = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("bc");
@@ -15,32 +15,19 @@ const Projects = () => {
       });
     });
 
-    const observerSc = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("sc");
-        } else {
-          // entry.target.classList.remove("sc");
-        }
-      });
-    });
 
-    const bigCards = document.querySelectorAll(".bigcards");
-    const smallCards = document.querySelectorAll(".smallcards");
+    const bigCards = document.querySelectorAll(".card");
 
-    bigCards.forEach((el) => observerBc.observe(el));
-    smallCards.forEach((el) => observerSc.observe(el));
+    bigCards.forEach((el) => observer.observe(el));
 
-    // Cleanup function to disconnect the observers when the component unmounts
     return () => {
-      bigCards.forEach((el) => observerBc.unobserve(el));
-      smallCards.forEach((el) => observerSc.unobserve(el));
+      bigCards.forEach((el) => observer.unobserve(el));
     };
-  }, []); // Empty dependency array means this effect runs once after initial render
+  }, []); 
 
   return (
 
-    <div id='projects' className=' w-full relative overflow-hidden flex flex-col items-center '>
+    <div id='projects' className=' w-full relative overflow-hidden flex flex-col items-center px-[10%]'>
       <h2 className='text-[10vmin] font-[800] '>Projects</h2>
      
       <div className='p-[10vmin]'>

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className=" md:h-[100vh] w-full relative overflow-hidden flex flex-col justify-center"
+      className=" md:h-[100vh] w-full relative overflow-hidden flex flex-col justify-center px-[10%]"
     >
       <h2 className="text-[10vmin] font-[800] text-center p-[8vmin]">About Me</h2>
       <div className="gradient rotate-90 md:rotate-0"></div>
@@ -33,7 +33,7 @@ const About = () => {
           <div className="flex justify-center flex-wrap gap-[4vmin]">
           {Lucy.map((data, i) =>{
           return <div key={i} className="flex justify-center items-center flex-col">
-              <Image  src={data.src} alt={data.alt} width={50} height={50} className={data.className}/>
+              <Image  src={data.src} alt={data.alt} className={data.class} width={50} height={50} />
               <p>{data.name}</p>
               </div>}
           )}
