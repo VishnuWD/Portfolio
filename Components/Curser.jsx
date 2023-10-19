@@ -38,7 +38,7 @@ const Cursor = () => {
   }, []);
 
   return (
-    <div className="hidden md:block" id="total">
+    <div className="hidden lg:block" id="total">
       <div id="first"></div>
       <div id="second"></div>
     </div>

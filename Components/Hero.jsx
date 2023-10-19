@@ -25,31 +25,51 @@ const Hero = () => {
         className="z-[2] bg-teal-500 flex items-center h-[100vh] text-left w-full absolute overflow-hidden"
       >
         <div>
-          <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw] ">
-            I am Vishnu Yadav
+          <p className="text-gray-700 text-[6vmin] md:text-[3vmin] mx-[12.5vw] min-w-[75vw] font-[500]">
+            Hi 👋, my name is
+          </p>
+          <h1 className="heroName">
+            Vishnu Yadav
           </h1>
-          <p className="text-gray-200 text-[6vmin] mx-[10vw] min-w-[80vw] font-[500] mt-[2vh] pleft">
-            A{" "} <br />
-            <span className="heroSpan text-gray-700 text-left">Front-End</span>{" "}
+          <p className="text-gray-200 text-[5vmin] mx-[12.5vw] min-w-[75vw] mt-[2vh] invisible">
+            Aspiring
+          </p>
+          <p className="text-gray-200 text-[8vmin] md:text-[6vmin] mx-[12.5vw] min-w-[75vw] font-[500] pleft">
+            <span className="heroSpan text-gray-700">
+              Front-End
+            </span>{" "}
             Web Developer
           </p>
-          <p className="text-gray-100 text-[2.5vmin] mx-[10vw] w-[45vw] mt-[2vh] font-[500] pright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque, eveniet voluptatibus officiis ad amet autem porro impedit iste adipisci minima iure earum, dolorem doloribus!</p>
+          <p className="text-gray-100 text-[4vmin] md:text-[2.5vmin] mx-[12.5vw] w-[70vmin] md:w-[45vw] mt-[2vh] font-[400] pright">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+            doloremque, eveniet voluptatibus officiis ad amet autem porro
+            impedit iste adipisci minima iure earum, dolorem doloribus!
+          </p>
         </div>
       </div>
 
       <div className="right z-[1] bg-purple-600 flex items-center h-[100vh] w-full absolute overflow-hidden">
         <div>
-          <h1 className="text-white font-bold text-[12vmin] mx-[10vw] max-w-[80vw]">
-            I am Vishnu Yadav
+          <p className="text-orange-400 text-[6vmin] md:text-[3vmin] mx-[12.5vw] min-w-[75vw] font-[500]">
+            Hi 👋, my name is
+          </p>
+          <h1 className="heroName">
+            Vishnu Yadav
           </h1>
-          <p className="text-gray-200 text-[6vmin] mx-[10vw] min-w-[80vw] mt-[2vh] font-[500] pright">
-            Aspiring{" "} <br />
+          <p className="text-gray-100 text-[5vmin] mx-[12.5vw] min-w-[75vw] mt-[2vh]">
+            Aspiring
+          </p>
+          <p className="text-gray-100 text-[8vmin] md:text-[6vmin] mx-[12.5vw] min-w-[75vw]  font-[500] pright">
             <span className="heroSpan text-orange-400 text-left">
               Full-Stack
             </span>{" "}
             Web Developer{" "}
           </p>
-          <p className="text-gray-100 text-[2.5vmin] mx-[10vw] w-[45vw] mt-[2vh] font-[500] pright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque, eveniet voluptatibus officiis ad amet autem porro impedit iste adipisci minima iure earum, dolorem doloribus!</p>
+          <p className="text-gray-100 text-[4vmin] md:text-[2.5vmin] mx-[12.5vw] w-[70vmin] md:w-[45vw] mt-[2vh] font-[400] pright">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+            doloremque, eveniet voluptatibus officiis ad amet autem porro
+            impedit iste adipisci minima iure earum, dolorem doloribus!
+          </p>
         </div>
       </div>
 

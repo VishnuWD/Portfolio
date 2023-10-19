@@ -6,17 +6,15 @@ import { Lucy } from "@/Lib/Static";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      className=" md:h-[100vh] w-full relative overflow-hidden flex flex-col justify-center px-[10%]"
-    >
-      <h2 className="text-[10vmin] font-[800] text-center p-[8vmin]">About Me</h2>
-      <div className="gradient rotate-90 md:rotate-0"></div>
+    <div id="about" className="flex flex-col justify-center items-center py-[8vmin] px-[12.5%] h-fit ">
+      <h2 className="h2Titles">About Me</h2>
+      <div className="gradient "></div>
 
-      <div className="Wrapper m-[10vmin] mt-[0px] flex flex-col lg:flex-row justify-center">
-        <div className="lg:text-right text-center w-[100%] flex flex-col justify-center ">
-          <h2 className="text-[7vmin]">About Me</h2>
-          <p className="para">
+      <div className="Wrapper flex flex-col lg:flex-row justify-center">
+        
+        <div className="flex flex-col justify-center">
+          <h2 className="text-[5vmin] underline z-[99]">My Journey</h2>
+          <p className="para z-[99]">
             As a Frontend Developer, I am currently expanding my skillset by
             learning backend development, with the goal of becoming a Full Stack
             Developer. In addition to coding, I enjoy staying active and often
@@ -24,12 +22,13 @@ const About = () => {
           </p>
         </div>
         <img
-          className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin]"
+          className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin] z-[99]"
           src="\images\smile.png"
           alt="Vishnu Picture"
         />
-        <div className="lg:text-left text-center w-[100%] flex flex-col justify-center">
-          <h2 className="text-[7vmin]">Skills</h2>
+      </div>
+      <div className="lg:text-left text-center w-[100%] flex flex-col justify-center">
+          <h2 className="text-[5vmin] underline text-center">My Tech Stack</h2>
           <div className="flex justify-center flex-wrap gap-[4vmin]">
           {Lucy.map((data, i) =>{
           return <div key={i} className="flex justify-center items-center flex-col">
@@ -39,7 +38,6 @@ const About = () => {
           )}
           </div>
         </div>
-      </div>
     </div>
   );
 };

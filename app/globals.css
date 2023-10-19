@@ -67,16 +67,14 @@ body {
   }
 }
 
-/* .pleft::before {
-  content: "--____..-";
-  visibility: hidden;
-} */
 
 .equal-width {
   display: inline-block;
   width: 54vmin;
 }
-.pleft, .pright{
+
+.pleft,
+.pright {
   line-height: 150%;
 }
 
@@ -124,21 +122,87 @@ body {
 
 /* About start........................... */
 
+
+
+/* About send............................... */
+
+
+
+
+
+.cardGroup {
+  @apply grid gap-[5vh] md:gap-[5vw] content-center grid-cols-1 md:grid-cols-[1fr_1fr];
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.card {
+  background-color: blueviolet;
+  transition: transform 800ms cubic-bezier(.05, .43, .25, .95) 0.3s;
+  box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.82);
+
+}
+
+/* ----- Hero Section Start----- */
+.heroName {
+  @apply text-white font-bold text-[16vmin] md:text-[12vmin] leading-none mx-[12.5%] max-w-[75%]
+}
+
+.heroSpan {
+  @apply font-semibold font-serif text-[13vmin] md:text-[10vmin] inline-block w-[75vmin] md:w-[54vmin] text-left
+}
+
+
+/* ----- Hero Section End ----- */
+
+
+/* Title style for every section heading like "About me" and "Projects" */
+.h2Titles{
+  @apply text-[8vmin] font-[800] text-center 
+}
+.h2Titles::before{
+  @apply bg-white content-[""] h-[2px]
+}
+.h2Titles {
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
+}
+/* End */
+
+
+
+
+/* ----- About Me Section Start -----*/
+.para {
+  @apply text-[3vmin]
+}
+.aboutIcons {
+  @apply w-[8vmin]
+}
+
+.react {
+  animation: rotate 5s linear infinite;
+}
+    /* Keyframes for "React icon" which makes it rotate */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .gradient {
-  width: 70%;
-  height: 20%;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
+  @apply w-[70%] h-[30%] rounded-full top-[150vh] left-1/2 absolute -z-[-99];
   transform: translate(-50%, -50%);
   background: linear-gradient(300deg, #14b8a6, #9333ea);
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
-  position: absolute;
   filter: blur(10vmin);
-  z-index: -99;
+  opacity: 50%;
 }
 
+/* keyframes for gradient animation which keep changes it's position */
 
 @keyframes gradient-animation {
   0% {
@@ -154,91 +218,15 @@ body {
   }
 }
 
-/* About send............................... */
-
-
-
-h2 {
-  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
-}
-
-.cardGroup {
-  @apply grid gap-[5vh] md:gap-[5vw] content-center grid-cols-1 md:grid-cols-[1fr_1fr];
-  /* grid-template-columns: 1fr 1fr; */
-}
-
-.card {
-  background-color: blueviolet;
-  transition: transform 800ms cubic-bezier(.05, .43, .25, .95) 0.3s;
-  box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.82);
-
-}
+/* ----- About Me Section End ----- */
 
 
 
 
-/* Contact me starts here */
-
-input:focus~label,
-input:not(:placeholder-shown)~label,
-textarea:focus~label,
-textarea:not(:placeholder-shown)~label {
-  top: 0;
-  left: 5%;
-  background-color: #1f2937;
-  font-size: small;
-  color: #fb923c;
-}
-
-
-.para {
-  @apply text-[3vmin]
-}
-
-.herobutton {
-  @apply flex gap-[1vmin] font-semibold rounded border-[2px] py-[1vmin] px-[3vmin] cursor-none
-}
-
-.heroSpan {
-  @apply font-semibold font-serif text-[10vmin] inline-block w-[54vmin]
-}
 
 
 
-.aboutIcons {
-  @apply w-[8vmin]
-}
 
-.react {
-  animation: rotate 5s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@media(max-width: 640px) {
-  .gradient {
-    width: 20%;
-    height: 50%;
-  }
-
-  .pleft::before {
-    content: "--____..-";
-    /* Content goes here */
-    visibility: hidden;
-  }
-
-}
-
-
-/*  */
 
 .card {
 
@@ -248,13 +236,15 @@ textarea:not(:placeholder-shown)~label {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   filter: opacity(0%);
   transition: transform, filter 1s ease;
-  transition:  1s ease;
+  transition: 1s ease;
   transform: translateY(100px);
 }
-.bc{
+
+.bc {
   filter: opacity(100%);
   transform: translateY(0);
 }
+
 .card img {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   width: 100%;
@@ -326,4 +316,3 @@ textarea:not(:placeholder-shown)~label {
 
 
 /* Socialssss.................. */
-
