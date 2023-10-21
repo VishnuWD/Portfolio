@@ -5,12 +5,46 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background-color: #1f2937;
   color: #fff;
   cursor: none;
 }
+/* Scroll bar styles start */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fb923c;
+  border-radius: 1vw;
+  border: 3px solid #1f2937;
+  cursor: none;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: #fb923c;
+  border: 3px solid #1f2937;
+
+} */
+
+::-webkit-scrollbar-track {
+  background-color: #1f2937;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #1f2937;
+}
+
+::-webkit-scrollbar-track:hover~ ::-webkit-scrollbar-thumb {
+  background-color: #fb923c;
+}
+
+
+/* scroll bar styles end */
+
+
 
 /* #fb923c for orange color */
 /* #total{
@@ -18,7 +52,7 @@ body {
   height: 100px;
   width:100px;
 }  */
-
+/* Mouse styling starts from here */
 #first {
   height: 15px;
   width: 15px;
@@ -50,6 +84,8 @@ body {
 
 }
 
+
+/* keyframes for rotating animation for second mouse background and background glow in "about me" */
 @keyframes rotate-center {
   0% {
     background-position: 0% 50%;
@@ -66,18 +102,14 @@ body {
 
   }
 }
+/* Mouse styling ends here */
 
 
-.equal-width {
-  display: inline-block;
-  width: 54vmin;
-}
 
-.pleft,
-.pright {
-  line-height: 150%;
-}
 
+
+
+/* 1️⃣ Navbar Section starts here */
 .navlist {
   @apply text-[2.5vmin] font-medium relative hidden lg:block cursor-none;
 }
@@ -93,56 +125,11 @@ body {
 
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #1f2937;
-  border-radius: 1vw;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #fb923c;
-  border: 3px solid #1f2937;
-  cursor: none;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #1f2937;
-}
-
-::-webkit-scrollbar-track:hover {
-  background-color: #1f2937;
-}
-
-::-webkit-scrollbar-track:hover~ ::-webkit-scrollbar-thumb {
-  background-color: #fb923c;
-}
-
-/* About start........................... */
+/* Navbar Section end here */
 
 
 
-/* About send............................... */
-
-
-
-
-
-.cardGroup {
-  @apply grid gap-[5vh] md:gap-[5vw] content-center grid-cols-1 md:grid-cols-[1fr_1fr];
-  /* grid-template-columns: 1fr 1fr; */
-}
-
-.card {
-  background-color: blueviolet;
-  transition: transform 800ms cubic-bezier(.05, .43, .25, .95) 0.3s;
-  box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.82);
-
-}
-
-/* ----- Hero Section Start----- */
+/* 2️⃣ ----- Hero Section Start----- */
 .heroName {
   @apply text-white font-bold text-[16vmin] md:text-[12vmin] leading-none mx-[12.5%] max-w-[75%]
 }
@@ -151,29 +138,37 @@ body {
   @apply font-semibold font-serif text-[13vmin] md:text-[10vmin] inline-block w-[75vmin] md:w-[54vmin] text-left
 }
 
+.equal-width {
+  display: inline-block;
+  width: 54vmin;
+}
 
+.pleft,
+.pright {
+  line-height: 150%;
+}
 /* ----- Hero Section End ----- */
 
 
 /* Title style for every section heading like "About me" and "Projects" */
-.h2Titles{
-  @apply text-[8vmin] font-[800] text-center 
+.h2Titles {
+  @apply text-[8vmin] font-[800] text-center
 }
-.h2Titles::before{
-  @apply bg-white content-[""] h-[2px]
-}
+
 .h2Titles {
   text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.6);
 }
+
 /* End */
 
 
 
 
-/* ----- About Me Section Start -----*/
+/* 3️⃣ ----- About Me Section Start -----*/
 .para {
-  @apply text-[3vmin]
+  @apply text-[2.5vmin] font-normal mt-[1.5vmin] text-gray-100
 }
+
 .aboutIcons {
   @apply w-[8vmin]
 }
@@ -181,7 +176,8 @@ body {
 .react {
   animation: rotate 5s linear infinite;
 }
-    /* Keyframes for "React icon" which makes it rotate */
+
+/* Keyframes for "React icon" which makes it rotate */
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -218,101 +214,18 @@ body {
   }
 }
 
-/* ----- About Me Section End ----- */
+/*  ----- About Me Section End ----- */
 
 
 
+/* 4️⃣ ----- Projects Section Starts here ----- */
 
 
 
+/* 5️⃣ ----- Projects Section Ends her ----- */
 
+/* 6️⃣  ----- Socials Section Starts here ----- */
 
-
-.card {
-
-  @apply relative aspect-video bg-[#1f2937] rounded-[2.5vmin] flex items-center justify-center overflow-hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  filter: opacity(0%);
-  transition: transform, filter 1s ease;
-  transition: 1s ease;
-  transform: translateY(100px);
+.iconStyles{
+  @apply text-[3vmin]
 }
-
-.bc {
-  filter: opacity(100%);
-  transform: translateY(0);
-}
-
-.card img {
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  width: 100%;
-  height: 100%;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-
-.card__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  /* background-color: #1f2937; */
-  background: transparent;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.card:hover .card__content {
-  transform: rotateX(0deg);
-}
-
-.card:hover img {
-  filter: brightness(10%);
-}
-
-.card__title {
-  margin: 0;
-  font-size: 5vmin;
-  color: #fb923c;
-  font-weight: 700;
-}
-
-
-.card__description {
-  margin: 10px 0 10px;
-  font-size: 2.5vmin;
-  color: #f2f2f2;
-  line-height: 1.4;
-}
-
-.card__button {
-  padding: 1.5vmin 2vmin;
-  border-radius: 1.5vmin;
-  background: #9333ea;
-  border: none;
-  color: white;
-  transition: all 0.2s ease;
-  margin: 2% 2% 0 0;
-}
-
-.card__button:hover {
-  transform: translateY(-10%);
-}
-
-.secondary {
-  background: transparent;
-  color: #14b8a6;
-  border: 1px solid #14b8a6;
-}
-
-
-/* Socialssss.................. */

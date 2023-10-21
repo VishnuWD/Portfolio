@@ -1,14 +1,15 @@
 import React from "react";
-
+import { RiTwitterXFill  } from "react-icons/ri"
+import { FiLinkedin, FiGithub  } from "react-icons/fi"
 const Socials = () => {
   return (
     <div className="hidden lg:block">
       <div className="flex flex-col items-center gap-[2vmin] fixed bottom-0 left-[3%] z-10">
         <ul className="flex flex-col items-center gap-[2vmin]">
-          <li>@</li>
-          <li>$</li>
-          <li>%</li>
-          <li>&</li>
+          <li><RiTwitterXFill className="iconStyles"/></li>
+          <li><FiLinkedin className="iconStyles"/></li>
+          <li><FiGithub className="iconStyles"/></li>
+          <li >&</li>
         </ul>
         <div className="bg-white h-[25vmin] w-[0.3vmin] "></div>
       </div>

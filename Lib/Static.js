@@ -92,14 +92,4 @@ export const projects = [
     target2: "_blank",
   },
 
-  {
-    src: "images/projectImages/brokeman.png",
-    className: "bigcards card",
-    title: "More Projects",
-    btn1: "Explore",
-    btn2: "GitHub",
-    url: "",
-    gitUrl: "https://github.com/VishnuWD?tab=repositories",
-    target2: "_blank",
-  },
 ];
