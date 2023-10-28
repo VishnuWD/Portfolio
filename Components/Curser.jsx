@@ -26,7 +26,8 @@ const Cursor = () => {
       second.style.width = "30vmin";
       second.style.transition = "all 0.5s linear";
     };
-
+    
+    loopFunction()
     const intervalId = setInterval(loopFunction, 5000);
 
     document.addEventListener("mousemove", handleMouseMove);
