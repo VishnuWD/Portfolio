@@ -8,7 +8,7 @@ html {
 body {
   background-color: #1f2937;
   color: #fff;
-  cursor: none;
+  /* cursor: none; */
 }
 /* Scroll bar styles start */
 
@@ -37,11 +37,6 @@ body {
   background-color: #1f2937;
 }
 
-::-webkit-scrollbar-track:hover~ ::-webkit-scrollbar-thumb {
-  background-color: #fb923c;
-}
-
-
 /* scroll bar styles end */
 
 
@@ -60,12 +55,12 @@ body {
   border-radius: 50%;
   /* position: fixed; */
   position: fixed;
-  z-index: 10000;
+  z-index: 10;
   pointer-events: none;
+  transition: all 100ms;
   /* box-shadow: inset #1f2937 2px ; */
   /* border-radius: 0px 200px 200px 200px; */
   /* box-shadow: outset 0px 0px 3px 1px rgba(0,0,0,0.75); */
-
 }
 
 #second {
@@ -131,11 +126,11 @@ body {
 
 /* 2️⃣ ----- Hero Section Start----- */
 .heroName {
-  @apply text-white font-bold text-[16vmin] md:text-[12vmin] leading-none mx-[12.5%] max-w-[75%]
+  @apply text-white font-bold text-[16vmin] md:text-[12vmin] leading-none mx-[12.5%] max-w-[75%] cursor-default
 }
 
 .heroSpan {
-  @apply font-semibold font-serif text-[13vmin] md:text-[10vmin] inline-block w-[75vmin] md:w-[54vmin] text-left
+  @apply font-semibold font-serif text-[13vmin] md:text-[10vmin] inline-block w-[75vmin] md:w-[54vmin] text-left cursor-default
 }
 
 .equal-width {
@@ -146,6 +141,7 @@ body {
 .pleft,
 .pright {
   line-height: 150%;
+  @apply cursor-default;
 }
 /* ----- Hero Section End ----- */
 
@@ -220,12 +216,129 @@ body {
 
 /* 4️⃣ ----- Projects Section Starts here ----- */
 
+.projectsToLeft{
+  @apply lg:text-left flex-row ml-0 lg:mr-[50%] 
+}
+.projectsLeftImg{
+  @apply lg:ml-[40%]
+}
+.card {
+  @apply w-[50%] lg:w-[30%];
+  aspect-ratio: 16/9;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: all 1s ease-in-out .5s;
+  cursor: pointer;
+  box-shadow: 0px 0px 62px -16px rgba(0,0,0,0.94);
+  cursor: default;
+}
 
+.c1{
+  background-image: url(/images/projectImages/brokeman.png);
+  background-size: contain;
+}
 
+.c2{
+  background-image: url(/images/projectImages/dogtinder.png);
+  background-size: contain;
+}
+
+.c3{
+  background-image: url(/images/projectImages/fragshipper.png);
+  background-size: contain;
+}
+
+.c4{
+  background-image: url(/images/projectImages/netflixclone.png);
+  background-size: contain;
+}
+
+.cardView:nth-child(1){
+  /* transform: translateX(-100px) rotate(-15deg); */
+  z-index: 9;
+}
+
+.cardView:nth-child(2) {
+  transform: translateX(-15%) rotate(-5deg);
+}
+
+.cardView:nth-child(3) {
+  transform: translateX(0) rotate(5deg);
+}
+.cardView:nth-child(4) {
+  transform: translateX(15%) rotate(15deg);
+}
+.cardView:nth-child(5){
+  transform: translateY(-150%);
+}
+
+.main {
+  display: grid;
+  height: fit-content;
+  place-items: center;
+  margin-top: 25vmin;
+}
+
+/* button style */
+.btn {
+  width: 30vmin;
+  height: 10vmin;
+  border-radius: 1vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1f2937;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 33px 10px rgba(0,0,0);
+  border: #fb923c solid;
+}
+
+.sparkle {
+  fill: #fb923c;
+  transition: all 500ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #fb923c;
+  font-size: 2.5vmin;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg,#14b8a6,#9333ea);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  border: none;
+}
+.cardView:nth-child(5):hover .s{
+filter: blur(50px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
 /* 5️⃣ ----- Projects Section Ends her ----- */
 
 /* 6️⃣  ----- Socials Section Starts here ----- */
 
 .iconStyles{
-  @apply text-[3vmin]
+  @apply hover:text-orange-400 h-[3vmin] w-[3vmin] hover:scale-[125%] transition-all cursor-none;
+}
+.iconStyles:hover{
+  filter: drop-shadow(0px 0px 2px rgba(31, 41, 55, 0.5));
+}
+.mailsocial{
+  @apply hover:scale-[105%] font-medium text-[2vmin] transition-all hover:text-orange-400 z-[11] cursor-none;
+}
+.mailsocial:hover{
+  text-shadow:0px 0px 2px rgb(31, 41, 55);
 }

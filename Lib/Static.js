@@ -52,7 +52,6 @@ export const Lucy = [
 export const projects = [
   {
     src: "images/projectImages/portfolio.png",
-    className: "bigcards card",
     title: "Personal Portfolio",
     desc1:"Utilized Next.js, Tailwind CSS, and CSS to design and build the site.",
     desc2: "Deployed the website on GitHub Pages and Hosted in Vercel.",
@@ -66,8 +65,9 @@ export const projects = [
 
   {
     src: "images/projectImages/superherogame.png",
-    className: "bigcards card",
-    title: "Superheo Game",
+    className: "projectsToLeft",
+    className2:"projectsLeftImg",
+    title: "Superhero Game",
     desc1: "Developed a Superhero Game using Vanilla JavaScript, CSS and HTML.",
     desc2:"Added 'Play With Bot' for enriched multiplayer experience, eliminating player isolation in the game.",
     btn1: "Live Demo",
@@ -80,7 +80,6 @@ export const projects = [
 
   {
     src: "images/projectImages/d-i.png",
-    className: "bigcards card",
     title: "Digital Identity",
     desc1:"Replicated the appearance and functionality of a commonly used website for realistic user experience.",
     desc2: "Designed and implemented a website using React.js.",
