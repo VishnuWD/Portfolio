@@ -32,7 +32,7 @@ const Projects = () => {
       <h2 className="h2Titles pb-[8vmin]">Projects</h2>
       {projects.map((data, i) => {
         return (
-          <div key={i} className="relative grid items-center w-[100%] mb-[20vmin]">
+          <div key={i} className=" hidden lg:visible relative lg:grid items-center w-[100%] mb-[20vmin]">
             <img
               className={`w-[60%] align-middle aspect-video relative ${data.className2}`}
               src={data.src}
@@ -74,9 +74,11 @@ const Projects = () => {
         <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
     </svg>
 
-    <span className="text">More Projects</span>
+    <span className="moreProjectsText">More Projects</span>
 </button>
+
 </div>
+<div className="bg-orange-500 h-[0.5vmin] w-full rounded-full z-20"></div>
     </div>
   );
 };

@@ -17,13 +17,13 @@ const About = () => {
           <h2 className="text-[5vmin] font-bold pb-[1.5vmin] underline z-[99]">
             My Journey
           </h2>
-          <p className="para z-[99]">
+          <p className="para ">
             As a Frontend Developer, I am currently expanding my skillset by
             learning backend development, with the goal of becoming a Full Stack
             Developer. In addition to coding, I enjoy staying active and often
             visit the gym.
           </p>
-          <p className="para z-[99]">
+          <p className="para ">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
             harum ipsum vitae enim alias dolor nisi fugit odio! Eum odit illo
             nobis sunt quasi cumque veritatis asperiores. Illum corporis, optio
@@ -36,7 +36,7 @@ const About = () => {
           </p>
         </div>
         <img
-          className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin] z-[99]"
+          className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin]"
           src="\images\smile.png"
           alt="Vishnu Picture"
         />
