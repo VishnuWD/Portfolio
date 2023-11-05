@@ -162,11 +162,11 @@ body {
 
 /* 3️⃣ ----- About Me Section Start -----*/
 .para {
-  @apply text-[2.5vmin] font-normal mt-[1.5vmin] text-gray-100
+  @apply text-[4vmin] lg:text-[2.5vmin] text-center lg:text-left font-normal mt-[1.5vmin] text-gray-300;
 }
 
 .aboutIcons {
-  @apply w-[8vmin]
+  @apply w-[8vmin] 
 }
 
 .react {
@@ -280,6 +280,9 @@ body {
   box-shadow: 0px 0px 33px 10px rgba(0,0,0);
   border: #fb923c solid;
 }
+.btn:hover .moreProjectsText{
+  color: white;
+}
 
 .sparkle {
   @apply fill-orange-400 transition-[all_500ms_ease] h-[3vmin] lg:h-[4vmin];
@@ -301,9 +304,6 @@ body {
 filter: blur(50px);
 }
 
-.btn:hover .moreProjectsText {
-  color: white;
-}
 
 .btn:hover .sparkle {
   fill: white;

@@ -10,14 +10,14 @@ const Contact = () => {
       <h2 className="h2Titles pb-[8vmin] ">Contact Me</h2>
       <h2 className="text-[5vmin] text-gray-300 font-bold underline text-center pb-[3vmin] cursor-default">Get In Touch</h2>
       <p className="lg:w-1/2 text-center pb-[5vmin] text-gray-300 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis enim rem consequuntur corrupti recusandae eligendi.</p>
-      <button className="contactButton "> Say Hello</button>
+      <form action="mailto:vishnuyadavhome@gmail.com"><button className="contactButton "> Say Hello</button></form>
       
       <div className="socialButtons">
       <ul className=" lg:hidden flex items-center gap-[8vmin] lg:gap-[4vmin] mb-[12vmin]">
-          <li><RiTwitterXFill className="iconStyles"/></li>
-          <li><FiLinkedin className="iconStyles"/></li>
-          <li><FiGithub className="iconStyles"/></li>
-          <li ><FiInstagram className="iconStyles"/></li>
+          <li><a href="https://twitter.com/vishnu_yadav_x" target="_blank"><RiTwitterXFill className="iconStyles"/></a></li>
+          <li><a href="https://www.linkedin.com/in/vishnu-yadav-fwd/" target="_blank"><FiLinkedin className="iconStyles"/></a></li>
+          <li><a href="https://github.com/VishnuWD" target="_blank"><FiGithub className="iconStyles"/></a></li>
+          <li ><a href="https://www.instagram.com/thevishnuig/" target="_blank"><FiInstagram className="iconStyles"/></a></li>
         </ul>
       </div>
     </div>

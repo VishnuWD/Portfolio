@@ -27,14 +27,14 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" w-full relative overflow-hidden flex flex-col items-center px-[12.5%]"
+      className=" w-full relative overflow-hidden flex flex-col items-center px-[5%] lg:px-[12.5%]"
     >
       <h2 className="h2Titles pb-[8vmin]">Projects</h2>
       {projects.map((data, i) => {
         return (
           <div key={i} className=" hidden lg:visible relative lg:grid items-center w-[100%] mb-[20vmin]">
             <img
-              className={`w-[60%] align-middle aspect-video relative ${data.className2}`}
+              className={`w-[60%] align-middle aspect-video ${data.className2}`}
               src={data.src}
               alt=""
             />
@@ -56,6 +56,36 @@ const Projects = () => {
                   $
                 </button>
                 <button className="rounded-full bg-transparent font-bold border-none">
+                  #
+                </button>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+{/* For small screens */}
+{projects.map((data, i) => {
+        return (
+          <div key={i} className=" visible lg:hidden relative grid items-center w-[100%] mb-[20vmin]">
+            <h2 className="text-[7vmin] font-bold text-center text-orange-400 mb-[2vmin]">
+                {data.title}
+              </h2>
+              
+            <img
+              className={`align-middle aspect-video p-[4%_4%_0_4%] bg-gray-900`}
+              src={data.src}
+              alt=""
+            />
+            <div className={`text-center`}>
+              
+              <p className={` bg-gray-900 p-[3%]  `}>
+                {data.desc1}{data.desc2}
+              </p>
+              <div>
+                <button className="rounded-full font-bold">
+                  $
+                </button>
+                <button className="rounded-full font-bold">
                   #
                 </button>
               </div>
