@@ -27,7 +27,7 @@ const About = () => {
 
       <div className="Wrapper flex flex-col lg:flex-row justify-center">
         <div className="flex flex-col justify-center">
-          <h2 className="text-[5vmin] text-gray-300 text-center lg:text-left font-bold pb-[1.5vmin] underline z-[99]">
+          <h2 className="text-[5vmin] text-gray-300 text-center lg:text-left font-bold pb-[1.5vmin] underline z-[10]">
             My Journey
           </h2>
           <p className="para ">
