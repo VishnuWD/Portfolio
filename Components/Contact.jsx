@@ -2,14 +2,12 @@ import React from "react";
 import { RiTwitterXFill  } from "react-icons/ri"
 import { FiLinkedin, FiGithub, FiInstagram  } from "react-icons/fi"
 
-import Image from "next/image";
-
 const Contact = () => {
   return (
-    <div id="contact" className="flex flex-col justify-center items-center py-[8vmin] px-[12.5%] h-fit bg-gray-800">
+    <div id="contact" className="flex flex-col justify-center items-center py-[16vmin] px-[12.5%] h-fit bg-gray-800">
       <h2 className="h2Titles pb-[8vmin] ">Contact Me</h2>
       <h2 className="text-[5vmin] text-gray-300 font-bold underline text-center pb-[3vmin] cursor-default">Get In Touch</h2>
-      <p className="lg:w-1/2 text-center pb-[5vmin] text-gray-300 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis enim rem consequuntur corrupti recusandae eligendi.</p>
+      <p className="lg:w-1/2 text-center pb-[5vmin] text-gray-300 cursor-default">I'm actively seeking freelance work and available for new projects.</p>
       <form action="mailto:vishnuyadavhome@gmail.com"><button className="contactButton "> Say Hello</button></form>
       
       <div className="socialButtons">

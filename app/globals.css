@@ -5,11 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #1f2937;
   color: #fff;
   /* cursor: none; */
 }
+
 /* Scroll bar styles start */
 
 ::-webkit-scrollbar {
@@ -72,10 +74,11 @@ body {
   animation: rotate-center 8s linear infinite both;
   border-radius: 50%;
   position: fixed;
-  filter: blur(6vmin);
+  filter: blur(7vmin);
   /* transition: border 0.0s linear; */
   z-index: -99;
   transition: all 0.3s;
+  opacity: 75%;
 
 }
 
@@ -97,6 +100,7 @@ body {
 
   }
 }
+
 /* Mouse styling ends here */
 
 
@@ -143,6 +147,7 @@ body {
   line-height: 150%;
   @apply cursor-default;
 }
+
 /* ----- Hero Section End ----- */
 
 
@@ -166,11 +171,11 @@ body {
 }
 
 .aboutIcons {
-  @apply w-[8vmin] 
+  @apply w-[8vmin]
 }
 
 .react {
-  animation: rotate 5s linear infinite;
+  animation: rotate 10s linear infinite;
 }
 
 /* Keyframes for "React icon" which makes it rotate */
@@ -215,39 +220,45 @@ body {
 
 /* 4️⃣ ----- Projects Section Starts here ----- */
 
-.projectsToLeft{
-  @apply lg:text-left flex-row ml-0 lg:mr-[50%] 
+.projectsToLeft {
+  @apply lg:text-left flex-row ml-0 lg:mr-[50%]
 }
-.projectsLeftImg{
+
+.projectsLeftImg {
   @apply lg:ml-[40%]
 }
+
+.projectsBtns1 {
+  @apply border-solid border-[0.3vmin] border-violet-600 bg-violet-600 py-[0.8vmin] px-[1.5vmin] mr-[1vmin] font-medium mt-[5vmin] lg:mt-0
+}
+.projectsBtns2{
+  @apply border-solid border-[0.3vmin] border-teal-500 bg-transparent py-[0.8vmin] px-[1.5vmin] ml-[1vmin] font-medium shadow-sm mt-[5vmin] lg:mt-0
+}
+
 .card {
-  @apply w-[50%] lg:w-[30%] absolute aspect-video ;
+  @apply w-[50%] lg:w-[30%] absolute aspect-video;
   transition: all 1s ease-in-out .5s;
-  box-shadow: 0px 0px 62px -16px rgba(0,0,0,0.94);
+  box-shadow: 0px 0px 62px -16px rgba(0, 0, 0, 0.94);
+  background-size: contain;
 }
 
-.c1{
+.c1 {
   background-image: url(/images/projectImages/brokeman.png);
-  background-size: contain;
 }
 
-.c2{
+.c2 {
   background-image: url(/images/projectImages/dogtinder.png);
-  background-size: contain;
 }
 
-.c3{
+.c3 {
   background-image: url(/images/projectImages/fragshipper.png);
-  background-size: contain;
 }
 
-.c4{
+.c4 {
   background-image: url(/images/projectImages/netflixclone.png);
-  background-size: contain;
 }
 
-.cardView:nth-child(1){
+.cardView:nth-child(1) {
   /* transform: translateX(-100px) rotate(-15deg); */
   z-index: 9;
 }
@@ -259,10 +270,12 @@ body {
 .cardView:nth-child(3) {
   transform: translateX(0) rotate(5deg);
 }
+
 .cardView:nth-child(4) {
   transform: translateX(15%) rotate(15deg);
 }
-.cardView:nth-child(5){
+
+.cardView:nth-child(5) {
   transform: translateY(-150%);
 }
 
@@ -277,10 +290,11 @@ body {
 .btn {
   @apply w-[35vmin] lg:w-[30vmin] h-[10vmin] flex justify-center items-center gap-[1vmin] bg-gray-800 rounded-full;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 0px 33px 10px rgba(0,0,0);
+  box-shadow: 0px 0px 33px 10px rgba(0, 0, 0);
   border: #fb923c solid;
 }
-.btn:hover .moreProjectsText{
+
+.btn:hover .moreProjectsText {
   color: white;
 }
 
@@ -293,28 +307,30 @@ body {
 }
 
 .btn:hover {
-  background-image: linear-gradient(90deg,#14b8a6,#9333ea);
+  background-image: linear-gradient(90deg, #14b8a6, #9333ea);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-  0px 0px 180px 0px #9917FF;
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 180px 0px #9917FF;
   border: none;
 }
-.cardView:nth-child(5):hover .s{
-filter: blur(50px);
+
+.cardView:nth-child(5):hover .s {
+  filter: blur(50px);
 }
 
 
 .btn:hover .sparkle {
   fill: white;
   transform: scale(1.2);
-} 
+}
+
 /*  ----- Projects Section Ends her ----- */
 
 /* 5️⃣ ----- Contactt section starts here ----- */
 .contactButton {
   @apply relative w-[35vmin] h-[10vmin] lg:w-[17vmin] lg:h-[6vmin] rounded-full z-[11] mb-[12vmin] text-[4vmin] lg:text-[2.5vmin] font-bold;
-  background: linear-gradient(90deg,#14b8a6,#9333ea,#14b8a6);
+  background: linear-gradient(90deg, #14b8a6, #9333ea, #14b8a6);
   background-size: 300%;
 }
 
@@ -340,7 +356,7 @@ filter: blur(50px);
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(90deg,#14b8a6,#9333ea,#14b8a6);
+  background: linear-gradient(90deg, #14b8a6, #9333ea, #14b8a6);
   background-size: 400%;
   border-radius: 35px;
   transition: 1s;
@@ -351,23 +367,27 @@ filter: blur(50px);
 }
 
 .contactButton:active {
-  background: linear-gradient(32deg,#14b8a6,#9333ea,#14b8a6);
+  background: linear-gradient(32deg, #14b8a6, #9333ea, #14b8a6);
 }
+
 /* ------ Contact section ends here  ------- */
 
 /* 6️⃣  ----- Socials Section Starts here ----- */
 
-.iconStyles{
+.iconStyles {
   @apply hover:text-orange-400 h-[6vmin] w-[6vmin] lg:h-[3vmin] lg:w-[3vmin] hover:scale-[125%] transition-all cursor-none;
 }
-.iconStyles:hover{
+
+.iconStyles:hover {
   filter: drop-shadow(0px 0px 2px rgba(31, 41, 55, 0.5));
 }
-.mailsocial{
+
+.mailsocial {
   @apply hover:scale-[105%] font-medium text-[2vmin] transition-all hover:text-orange-400 z-[11] cursor-none;
 }
-.mailsocial:hover{
-  text-shadow:0px 0px 2px rgb(31, 41, 55);
+
+.mailsocial:hover {
+  text-shadow: 0px 0px 2px rgb(31, 41, 55);
 }
 
 

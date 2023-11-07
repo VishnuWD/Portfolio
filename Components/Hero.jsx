@@ -28,34 +28,28 @@ const Hero = () => {
           <p className="text-gray-700 text-[6vmin] md:text-[3vmin] mx-[12.5vw] min-w-[75vw] font-[500] cursor-default">
             Hi 👋, my name is
           </p>
-          <h1 className="heroName">
-            Vishnu Yadav
-          </h1>
+          <h1 className="heroName">Vishnu Yadav</h1>
           <p className="text-gray-200 text-[5vmin] mx-[12.5vw] min-w-[75vw] mt-[2vh] invisible">
             Aspiring
           </p>
           <p className="text-gray-200 text-[8vmin] md:text-[6vmin] mx-[12.5vw] min-w-[75vw] font-[500] pleft">
-            <span className="heroSpan text-gray-700">
-              Front-End
-            </span>{" "}
-            Web Developer
+            <span className="heroSpan text-gray-700">Front-End</span> Web
+            Developer
           </p>
           <p className="text-gray-100 text-[4vmin] md:text-[2.5vmin] mx-[12.5vw] w-[70vmin] md:w-[45vw] mt-[2vh] font-[400] pright">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-            doloremque, eveniet voluptatibus officiis ad amet autem porro
-            impedit iste adipisci minima iure earum, dolorem doloribus!
+            I'm a devoted web developer with a passion for creating exceptional
+            digital experiences. My journey began in high school, and I continue
+            to be inspired by the world of web development!
           </p>
         </div>
       </div>
 
-      <div className="right z-[1] bg-purple-600 flex items-center h-[100vh] w-full absolute overflow-hidden">
+      <div className="right z-[1] bg-purple-600 flex items-center h-[100vh] w-full overflow-hidden">
         <div>
           <p className="text-orange-400 text-[6vmin] md:text-[3vmin] mx-[12.5vw] min-w-[75vw] font-[500] cursor-default">
             Hi 👋, my name is
           </p>
-          <h1 className="heroName">
-            Vishnu Yadav
-          </h1>
+          <h1 className="heroName">Vishnu Yadav</h1>
           <p className="text-gray-100 text-[5vmin] mx-[12.5vw] min-w-[75vw] mt-[2vh] cursor-default">
             Aspiring
           </p>
@@ -66,14 +60,12 @@ const Hero = () => {
             Web Developer{" "}
           </p>
           <p className="text-gray-100 text-[4vmin] md:text-[2.5vmin] mx-[12.5vw] w-[70vmin] md:w-[45vw] mt-[2vh] font-[400] pright">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-            doloremque, eveniet voluptatibus officiis ad amet autem porro
-            impedit iste adipisci minima iure earum, dolorem doloribus!
+            I'm a devoted web developer with a passion for creating exceptional
+            digital experiences. My journey began in high school, and I continue
+            to be inspired by the world of web development
           </p>
         </div>
       </div>
-
-      <div className="h-[100vh] w-[100%]"></div>
     </div>
   );
 };

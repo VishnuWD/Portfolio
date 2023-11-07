@@ -2,6 +2,19 @@
 import React from "react";
 import Image from "next/image";
 import { icons } from "@/Lib/Static";
+import { Tilt } from "react-tilt";
+
+const defaultOptions = {
+  reverse: true, // reverse the tilt direction
+  max: 35, // max tilt rotation (degrees)
+  perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.3, // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000, // Speed of the enter/exit transition
+  transition: true, // Set a transition on enter/exit.
+  axis: null, // What axis should be disabled. Can be X or Y.
+  reset: true, // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
 
 const About = () => {
   return (
@@ -18,21 +31,21 @@ const About = () => {
             My Journey
           </h2>
           <p className="para ">
-            As a Frontend Developer, I am currently expanding my skillset by
-            learning backend development, with the goal of becoming a Full Stack
-            Developer. In addition to coding, I enjoy staying active and often
-            visit the gym.
+            Greetings! I'm Vishnu Yadav, and I'm passionate about web
+            development. My journey into the world of coding began in high
+            school when I discovered the magic of HTML and CSS. During my
+            undergraduate studies in Bachelor of Commerce with a focus on
+            computer applications, I deepened my understanding of web
+            development, exploring JavaScript and various frameworks.
           </p>
           <p className="para ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
-            harum ipsum vitae enim alias dolor nisi fugit odio! Eum odit illo
-            nobis sunt quasi cumque veritatis asperiores. Illum corporis, optio
-            veniam eum, quaerat magni quisquam incidunt sapiente
+            My focus is on frontend web development, where I strive to create
+            user-friendly and visually appealing web solutions. As my career
+            unfolds, I have my sights set on becoming a full-stack developer.
           </p>
           <p className="para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
-            officiis temporibus odio nulla laborum quo amet veniam, iste fuga
-            et?
+            Eager to take on diverse web projects, whether within a company or
+            through freelancing. Let's shape the digital world together!
           </p>
         </div>
         <img
@@ -52,14 +65,18 @@ const About = () => {
                 key={i}
                 className="flex justify-center items-center flex-col"
               >
-                <Image
-                  src={data.src}
-                  alt={data.alt}
-                  className={data.class}
-                  width={200}
-                  height={200}
-                />
-                <p className=" text-gray-300 text-[4vmin] lg:text-[2.5vmin] font-normal">{data.name}</p>
+                <Tilt options={defaultOptions}>
+                  <Image
+                    src={data.src}
+                    alt={data.alt}
+                    className={data.class}
+                    width={200}
+                    height={200}
+                  />
+                </Tilt>
+                <p className=" text-gray-300 text-[4vmin] lg:text-[2.5vmin] font-normal">
+                  {data.name}
+                </p>
               </div>
             );
           })}

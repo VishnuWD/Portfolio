@@ -53,42 +53,40 @@ export const projects = [
   {
     src: "images/projectImages/portfolio.png",
     title: "Personal Portfolio",
-    desc1:"Utilized Next.js, Tailwind CSS, and CSS to design and build the site.",
-    desc2: " Deployed the website on GitHub Pages and Hosted in Vercel.",
+    desc1:
+      "This project, built with Next.js and Tailwind CSS, provided a hands-on learning experience with Tailwind CSS while overcoming various challenges. It's live on GitHub Pages and hosted on Vercel, highlighting my skills in modern web development and deployment.",
+
     btn1: "Live Demo",
     btn2: "Code",
     url: "https://portfolio-xi-two-16.vercel.app",
     gitUrl: "https://github.com/VishnuWD/Portfolio",
     target: "_blank",
-    target2: "_blank",
   },
 
   {
     src: "images/projectImages/superherogame.png",
     className: "projectsToLeft",
-    className2:"projectsLeftImg",
+    className2: "projectsLeftImg",
     title: "Superhero Game",
-    desc1: "Developed a Superhero Game using Vanilla JavaScript, CSS and HTML.",
-    desc2:" Added 'Play With Bot' for enriched multiplayer experience, eliminating player isolation in the game.",
+    desc1:
+      "Using HTML, CSS, and JavaScript, I built an interactive game to enhance my understanding of APIs and asynchronous operations in JavaScript. This project enables players to engage in a fun 'play with the bot' game, reflecting my proficiency in web development and JavaScript.",
+
     btn1: "Live Demo",
     btn2: "Code",
     url: "https://vishnuwd.github.io/SuperHeroGame/",
     gitUrl: "https://github.com/VishnuWD/SuperHeroGame",
-    target: "_blank",
-    target2: "_blank",
+    target: "_blank"
   },
 
   {
     src: "images/projectImages/d-i.png",
     title: "Digital Identity",
-    desc1:"Replicated the appearance and functionality of a commonly used website for realistic user experience.",
-    desc2: " Designed and implemented a website using React.js.",
+    desc1:
+      "Replicated the appearance and functionality of a commonly used website for realistic user experience.",
     btn1: "Live Demo",
     btn2: "Code",
     url: "https://digital-identity-h64zxo76s-vishnuwd.vercel.app",
     gitUrl: "https://github.com/VishnuWD/Digital-Identity",
     target: "_blank",
-    target2: "_blank",
   },
-
 ];
