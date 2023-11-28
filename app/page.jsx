@@ -6,17 +6,20 @@ import Curser from "@/Components/Curser";
 import Hero from "@/Components/Hero";
 import Projects from "@/Components/Projects";
 import Socials from "@/Components/Socials";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const page = () => {
   return (
     <>
+    <Suspense fallback={<Loading/>}>
       <Curser />
       <Hero />
       <About />
       <Projects />
       <Contact />
       <Socials/>
-    {/* <p className='fixed bottom-0 h-[30px] bg-red-700 z-[100] w-full text-center'>The website is currently in development.</p> */}
+      </Suspense>
     </>
   );
 };

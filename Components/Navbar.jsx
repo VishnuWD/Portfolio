@@ -13,12 +13,10 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden">
-      <h1 className="font-bold text-[7vmin] lg:text-[4vmin] z-20">
-        {"< Vishnu />"}
-      </h1>
+      <img className=" h-[6vmin] lg:text-[4vmin] z-20" src="\images\logo.png"/>
       
-      <label className="bar z-20 lg:hidden" for="check">
-    <input type="checkbox" id="check" className="lg:hidden z-20" onClick={toggleNav} checked={showNav}/>
+      <label className="bar z-20 lg:hidden" htmlFor="check">
+    <input type="checkbox" id="check" className="lg:hidden z-20" onClick={toggleNav} checked={showNav} readOnly/>
     <span className="top"></span>
     <span className="middle"></span>
     <span className="bottom"></span>
