@@ -12,7 +12,7 @@ const Navbar = () => {
   const hideNav =() => setShowNav(false)
 
   return (
-    <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden">
+    <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden transition-all">
       <img className=" h-[6vmin] lg:text-[4vmin] z-20" src="\images\logo.png"/>
       
       <label className="bar z-20 lg:hidden" htmlFor="check">
