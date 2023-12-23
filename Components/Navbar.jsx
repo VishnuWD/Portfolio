@@ -1,7 +1,7 @@
 "use client"
 
+import Link from "next/link";
 import React, { useState } from "react";
- 
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -12,8 +12,8 @@ const Navbar = () => {
   const hideNav =() => setShowNav(false)
 
   return (
-    <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden">
-      <img className=" h-[6vmin] lg:text-[4vmin] z-20" src="\images\logo.png"/>
+    <nav className="flex justify-around h-[15vh] w-full items-center absolute top-0 left-0 right-0 z-[90] text-white overflow-hidden selection:text-orange-400">
+      <Link href="/"><img className=" h-[9vmin] lg:h-[6vmin] z-20" src="\images\logo.png"/></Link>
       
       <label className="bar z-20 lg:hidden" htmlFor="check">
     <input type="checkbox" id="check" className="lg:hidden z-20" onClick={toggleNav} checked={showNav} readOnly/>
@@ -34,9 +34,9 @@ const Navbar = () => {
         <a href="/#projects">
           <li className="navlist" onClick={hideNav}>Projects</li>
         </a>
-        
-          <li className="navlist" onClick={hideNav}><a href="/#contact">Contact</a></li>
-        
+        <a href="/#contact">
+          <li className="navlist" onClick={hideNav}>Contact</li>
+          </a>
         
       </ul>
     </nav>

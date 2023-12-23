@@ -90,3 +90,94 @@ export const projects = [
     target: "_blank",
   },
 ];
+
+export const moreProjects = [
+
+  {
+    src: "images/projectImages/powerpulse.png",
+    title: "Spotify",
+    btn1: "Live Demo",
+    url: "https://power-pulse-jade.vercel.app",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/docs.png",
+    title: "Docs",
+    btn1: "Live Demo",
+    url: "https://docs-virid-mu.vercel.app",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/dogtinder.png",
+    title: "Dog Tinder",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/DogTinder/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/simon.png",
+    title: "Simon Game",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/Simon/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/oldportfolio.png",
+    title: "Old Portfolio",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/PortfolioOld/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/brokeman.png",
+    title: "Broke Man",
+    btn1: "Live Demo",
+    url: "broke-man.vercel.app",
+    target: "_blank",
+  },
+
+  {
+    src: "images/projectImages/fragshipper.png",
+    title: "Frag Shipper",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/FRAGshipper/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/netflixclone.png",
+    title: "NetFlix",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/NetflixClone/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/spotifyclone.png",
+    title: "Spotify",
+    btn1: "Live Demo",
+    url: "https://spotify-clone-five-omega.vercel.app",
+    target: "_blank",
+  },
+
+  {
+    src: "images/projectImages/texxtutils.png",
+    title: "TextUtils",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/TextUtils/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/fighting.png",
+    title: "Fighting Game",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/FightingGame/",
+    target: "_blank",
+  },
+  {
+    src: "images/projectImages/randomfog.png",
+    title: "Random Dog",
+    btn1: "Live Demo",
+    url: "https://vishnuwd.github.io/Random-Dog-Images/",
+    target: "_blank",
+  },
+
+]

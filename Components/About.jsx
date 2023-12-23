@@ -16,7 +16,7 @@ const defaultOptions = {
   easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
 };
 
-const About = () => {
+const About = ({theme}) => {
   return (
     <div
       id="about"
@@ -27,10 +27,11 @@ const About = () => {
 
       <div className="Wrapper flex flex-col lg:flex-row justify-center">
         <div className="flex flex-col justify-center">
-          <h2 className="text-[5vmin] text-gray-300 text-center lg:text-left font-bold pb-[1.5vmin] underline z-[10]">
+          <h2 className="text-gray-300 text-[5vmin]  text-center lg:text-left font-bold pb-[1.5vmin] underline z-[10]">
             My Journey
           </h2>
-          <p className="para ">
+          <div className='text-gray-300'>
+          <p className="para">
             Greetings! I'm Vishnu Yadav, and I'm passionate about web
             development. My journey into the world of coding began in high
             school when I discovered the magic of HTML and CSS. During my
@@ -47,6 +48,7 @@ const About = () => {
             Eager to take on diverse web projects, whether within a company or
             through freelancing. Let's shape the digital world together!
           </p>
+          </div>
         </div>
         <img
           className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin]"

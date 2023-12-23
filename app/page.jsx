@@ -6,22 +6,24 @@ import Curser from "@/Components/Curser";
 import Hero from "@/Components/Hero";
 import Projects from "@/Components/Projects";
 import Socials from "@/Components/Socials";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Loading from "./loading";
+import { collapseToast } from "react-toastify";
 
-const page = () => {
+const Page = () => {
+
   return (
-    <>
-    <Suspense fallback={<Loading/>}>
-      <Curser />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      <Socials/>
+    <div className="selection:text-orange-400 ">
+      <Suspense fallback={<Loading />}>
+        <Curser />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+        <Socials />
       </Suspense>
-    </>
+    </div>
   );
 };
 
-export default page;
+export default Page;

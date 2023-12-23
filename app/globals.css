@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: #1f2937;
-  color: #fff;
+  color: white;
   /* cursor: none; */
 }
 
@@ -333,6 +333,7 @@ input[type]:checked ~ span.middle {
   opacity: 0;
 }
 
+
 /* Navbar Section end here */
 
 
@@ -376,7 +377,7 @@ input[type]:checked ~ span.middle {
 
 /* 3️⃣ ----- About Me Section Start -----*/
 .para {
-  @apply text-[4vmin] lg:text-[2.5vmin] text-center lg:text-left font-normal mt-[1.5vmin] text-gray-300;
+  @apply text-[4vmin] lg:text-[2.5vmin] text-center lg:text-left font-normal mt-[1.5vmin] ;
 }
 
 .aboutIcons {
@@ -446,46 +447,43 @@ input[type]:checked ~ span.middle {
 
 .card {
   @apply w-[50%] lg:w-[30%] absolute aspect-video;
-  transition: all 1s ease-in-out .5s;
   box-shadow: 0px 0px 62px -16px rgba(0, 0, 0, 0.94);
   background-size: contain;
 }
-
-.c1 {
-  background-image: url(/images/projectImages/brokeman.png);
+.cardTransition{
+  transition: all 1s ease-in-out .5s;
 }
 
-.c2 {
-  background-image: url(/images/projectImages/dogtinder.png);
-}
 
-.c3 {
-  background-image: url(/images/projectImages/fragshipper.png);
-}
-
-.c4 {
-  background-image: url(/images/projectImages/netflixclone.png);
-}
 
 .cardView:nth-child(1) {
   /* transform: translateX(-100px) rotate(-15deg); */
   z-index: 9;
+  background-image: url(/images/projectImages/brokeman.png);
+
 }
 
 .cardView:nth-child(2) {
   transform: translateX(-15%) rotate(-5deg);
+  background-image: url(/images/projectImages/dogtinder.png);
+
 }
 
 .cardView:nth-child(3) {
   transform: translateX(0) rotate(5deg);
+  background-image: url(/images/projectImages/fragshipper.png);
+
 }
 
 .cardView:nth-child(4) {
   transform: translateX(15%) rotate(15deg);
+  background-image: url(/images/projectImages/netflixclone.png);
+
 }
 
 .cardView:nth-child(5) {
   transform: translateY(-150%);
+
 }
 
 .main {
@@ -496,42 +494,27 @@ input[type]:checked ~ span.middle {
 }
 
 /* button style */
-.btn {
-  @apply w-[35vmin] lg:w-[30vmin] h-[10vmin] flex justify-center items-center gap-[1vmin] bg-gray-800 rounded-full;
-  transition: all 0.5s ease-in-out;
+.moreProjectbtn {
+  @apply w-[35vmin] lg:w-[30vmin] h-[10vmin] flex justify-center items-center gap-[1vmin] bg-gray-800 rounded-full font-[600] text-orange-400 hover:text-white text-[3vmin] lg:text-[2.5vmin];
+  /* transition: all 0.3s linear; */
   box-shadow: 0px 0px 33px 10px rgba(0, 0, 0);
   border: #fb923c solid;
 }
 
-.btn:hover .moreProjectsText {
-  color: white;
-}
 
-.sparkle {
-  @apply fill-orange-400 transition-[all_500ms_ease] h-[3vmin] lg:h-[4vmin];
-}
-
-.moreProjectsText {
-  @apply font-[600] text-orange-400 text-[3vmin] lg:text-[2.5vmin];
-}
-
-.btn:hover {
-  background-image: linear-gradient(90deg, #14b8a6, #9333ea);
+.moreProjectbtn:hover {
+  background-image: linear-gradient(180deg, #14b8a6, #9333ea);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
     0px 0px 0px 4px rgba(255, 255, 255, 0.2),
     0px 0px 180px 0px #9917FF;
   border: none;
+  /* transition: all 0.3s ease; */
+
 }
 
 .cardView:nth-child(5):hover .s {
   filter: blur(50px);
-}
-
-
-.btn:hover .sparkle {
-  fill: white;
-  transform: scale(1.2);
 }
 
 /*  ----- Projects Section Ends her ----- */
@@ -621,7 +604,4 @@ input[type]:checked ~ span.middle {
     transform: scale(1);
   }
 }
-
-
-
 
