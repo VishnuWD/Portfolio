@@ -95,7 +95,7 @@ export const moreProjects = [
 
   {
     src: "images/projectImages/powerpulse.png",
-    title: "Spotify",
+    title: "PowerPulse",
     btn1: "Live Demo",
     url: "https://power-pulse-jade.vercel.app",
     target: "_blank",
