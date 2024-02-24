@@ -66,7 +66,7 @@ export const projects = [
     src: "images/projectImages/nspixel.png",
     title: "NoSleep Pixel",
     desc1:
-      "This project, meticulously crafted using HTML, CSS, JavaScript, GSAP, and various small libraries, showcases my skills in modern web development. Its captivating animations and smooth transitions powered by GSAP enhance the user experience, reflecting my dedication to delivering high-quality digital solutions. Through overcoming challenges and hands-on learning experiences, this project stands as a testament to my proficiency and commitment to excellence in web development.",
+      "This project, meticulously crafted using HTML, CSS, JavaScript, GSAP, and various small libraries, showcases my skills in modern web development. Its captivating animations and smooth transitions powered by GSAP enhance the user experience, reflecting my dedication to delivering high-quality digital solutions.",
 
     btn1: "Live Demo",
     btn2: "Code",
