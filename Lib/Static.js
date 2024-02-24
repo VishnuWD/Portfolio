@@ -63,15 +63,15 @@ export const icons = [
 
 export const projects = [
   {
-    src: "images/projectImages/portfolio.png",
-    title: "Personal Portfolio",
+    src: "images/projectImages/nspixel.png",
+    title: "NoSleep Pixel",
     desc1:
-      "This project, built with Next.js and Tailwind CSS, provided a hands-on learning experience with Tailwind CSS while overcoming various challenges. It's live on GitHub Pages and hosted on Vercel, highlighting my skills in modern web development and deployment.",
+      "This project, meticulously crafted using HTML, CSS, JavaScript, GSAP, and various small libraries, showcases my skills in modern web development. Its captivating animations and smooth transitions powered by GSAP enhance the user experience, reflecting my dedication to delivering high-quality digital solutions. Through overcoming challenges and hands-on learning experiences, this project stands as a testament to my proficiency and commitment to excellence in web development.",
 
     btn1: "Live Demo",
     btn2: "Code",
-    url: "https://portfolio-xi-two-16.vercel.app",
-    gitUrl: "https://github.com/VishnuWD/Portfolio",
+    url: "https://nosleeppixel.online",
+    gitUrl: "https://github.com/VishnuWD/NoSleepPixel",
     target: "_blank",
   },
 
