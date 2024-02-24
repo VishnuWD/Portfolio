@@ -51,7 +51,7 @@ const About = ({theme}) => {
           </div>
         </div>
         <img
-          className="min-h-[50vmin] min-w-[50vmin] pb-[10vmin]"
+          className="min-h-[50vmin] min-w-[50vmin]  pb-[10vmin]"
           src="\images\smile.png"
           alt="Vishnu Picture"
         />

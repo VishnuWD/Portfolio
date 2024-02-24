@@ -24,6 +24,18 @@ export const icons = [
     name: "React.js",
   },
   {
+    src: "/images/aboutIcons/jquery.png",
+    alt: "jquery",
+    class: "aboutIcons",
+    name: "JQuery",
+  },
+  {
+    src: "/images/aboutIcons/redux-toolkit.png",
+    alt: "redux-toolkit",
+    class: "aboutIcons",
+    name: "Redux-Toolkit",
+  },
+  {
     src: "/images/aboutIcons/bootstrap.png",
     alt: "bootstrap",
     class: "aboutIcons",
@@ -44,7 +56,7 @@ export const icons = [
   {
     src: "/images/aboutIcons/github.png",
     alt: "github",
-    class: "aboutIcons github",
+    class: "aboutIcons",
     name: "GitHub",
   },
 ];

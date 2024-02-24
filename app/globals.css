@@ -207,8 +207,9 @@ body {
 }  */
 /* Mouse styling starts from here */
 #first {
-  height: 15px;
-  width: 15px;
+  height: 2.2vmin;
+  width: 2.2vmin;
+  transform: translate(-50%, -50%);
   background-color: #fb923c;
   border-radius: 50%;
   /* position: fixed; */

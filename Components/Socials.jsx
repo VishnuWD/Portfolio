@@ -18,7 +18,7 @@ const Socials = () => {
         <form action="mailto:vishnuyadavhome@gmail.com">
             <button type="submit" className="mailsocial hover:scale-[105%] font-medium text-[2vmin] transition-all hover:text-orange-400 z-[11]">vishnuyadavhome@gmail.com</button>
         </form>
-        <div className="bg-white h-[0.3vmin] w-[25vmin] "></div>
+        <div className="bg-white h-[0.3vmin] w-[25vmin]"></div>
 
       </div>
     </div>
